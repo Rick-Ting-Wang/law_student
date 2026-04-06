@@ -1,0 +1,835 @@
+2026-04-05 18:01:53,243 - INFO - Use pytorch device_name: cuda:0
+2026-04-05 18:01:53,243 - INFO - Load pretrained SentenceTransformer: shibing624/text2vec-base-chinese
+2026-04-05 18:01:58,492 - INFO - Law retriever initialized. Total: 45199
+2026-04-05 18:01:58,495 - INFO - Start task 6_2 | 1000 samples | workers=30
+2026-04-05 18:02:19,110 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,110 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,110 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,111 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,111 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,111 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,111 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,111 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,111 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,111 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,111 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,126 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,126 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,126 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,126 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,126 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,126 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,126 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,127 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,127 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,127 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,127 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,127 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,127 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,127 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,127 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,127 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,141 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,141 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:19,157 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,206 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,206 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,206 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,206 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,221 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,221 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,221 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,221 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,221 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,221 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,222 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,222 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,222 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,222 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,222 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,222 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,222 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,222 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,222 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,222 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,222 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,222 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,222 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,222 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,222 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,236 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,236 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,236 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,236 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:39,251 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,318 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,318 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,318 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,318 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,318 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,318 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,318 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,318 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,319 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,319 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,334 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,335 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,336 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,336 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,336 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,336 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,336 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,336 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,336 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,336 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,336 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,337 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,337 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,337 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,337 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,337 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,337 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,337 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,337 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:02:59,338 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,663 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,679 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,679 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,695 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,695 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,695 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,695 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,695 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,711 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,711 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,711 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,711 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,727 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,743 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,743 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,743 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,743 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,775 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,775 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,775 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,775 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,775 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,775 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,791 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,791 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,791 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,791 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,807 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,807 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:18,807 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,682 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,730 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,730 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,762 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,762 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,762 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,762 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,762 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,762 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,762 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,762 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,762 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,762 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,810 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,810 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,826 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,826 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,826 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,826 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,826 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,826 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,842 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,842 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,842 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,842 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,842 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,842 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,842 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,842 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:38,842 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,690 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,754 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,754 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,802 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,802 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,802 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,818 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,818 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,819 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,819 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,819 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,819 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,820 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,866 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,866 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,866 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,886 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,898 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,898 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,899 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,899 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,900 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,900 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,900 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,900 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,900 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,900 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,902 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,902 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:03:58,903 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:17,722 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:17,786 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:17,786 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:17,882 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:17,898 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:17,914 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,055 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,071 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,071 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,071 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,087 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,087 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,102 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,134 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,150 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,166 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,182 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,198 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,198 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,198 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,214 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,214 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,214 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,214 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,214 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,214 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,230 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,230 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,230 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:18,230 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:37,749 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:37,813 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:37,813 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:37,893 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:37,925 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:37,940 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,084 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,099 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,099 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,115 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,115 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,115 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,115 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,147 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,163 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,179 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,195 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,227 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,227 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,227 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,243 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,243 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,243 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,243 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,259 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,259 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,259 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,259 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,259 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:38,259 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:57,761 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:57,825 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:57,825 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:57,887 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:57,919 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:57,967 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,141 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,141 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,141 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,157 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,157 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,173 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,173 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,175 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,206 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,237 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,269 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,269 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,269 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,284 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,300 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,300 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,300 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,301 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,301 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,301 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,302 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,302 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:58,316 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:04:59,226 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:05:21,298 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [757] is not enough (request id: 2026040518050553132326455587589)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:05:24,230 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [660] is not enough (request id: 2026040518051115948825133550396)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:05:27,695 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [636] is not enough (request id: 2026040518052057919238577189118)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:05:41,060 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [744] is not enough (request id: 2026040518052787154163691090889)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:05:45,265 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [648] is not enough (request id: 2026040518053026545490024800032)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:06:06,433 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [665] is not enough (request id: 202604051805467035763019665249)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:06:19,693 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [737] is not enough (request id: 2026040518060389702292362947016)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:06:24,476 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [767] is not enough (request id: 2026040518061017176420265454551)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:06:26,086 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [694] is not enough (request id: 2026040518061163254954054585978)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:06:40,596 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [738] is not enough (request id: 2026040518062511409543086614752)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:06:42,399 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [699] is not enough (request id: 2026040518062986071452665208253)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:06:42,407 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [806] is not enough (request id: 2026040518062965698847878593268)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:07:26,834 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [612] is not enough (request id: 2026040518071041703982211187517)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:07:33,081 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [664] is not enough (request id: 2026040518072710124293361904004)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:07:56,863 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [782] is not enough (request id: 2026040518073878136841326055180)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:08:01,929 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [610] is not enough (request id: 2026040518074169151714850469055)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:08:03,224 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [739] is not enough (request id: 2026040518074427598617158762686)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:08:04,491 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [707] is not enough (request id: 2026040518075782854097212678229)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:08:09,935 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [735] is not enough (request id: 2026040518080798242770116064685)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:08:11,661 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [699] is not enough (request id: 2026040518080815894155400452627)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:08:13,258 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [680] is not enough (request id: 2026040518080944611660335858742)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:08:23,128 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [658] is not enough (request id: 202604051808204923321303534636)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:08:31,127 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [644] is not enough (request id: 2026040518082724674991781651538)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:08:31,267 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [614] is not enough (request id: 2026040518082718415192294028657)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:08:32,413 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [657] is not enough (request id: 2026040518082877105988409656771)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:08:32,858 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [602] is not enough (request id: 2026040518083081692072868083804)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:08:34,769 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [625] is not enough (request id: 2026040518083225019461914276560)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:08:43,404 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [649] is not enough (request id: 2026040518083710338097657300492)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:08:49,754 - WARNING - [6_2] attempt 2 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [649] is not enough (request id: 2026040518084699840654222943995)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:08:54,268 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [709] is not enough (request id: 2026040518085233514996614996610)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:08:56,146 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [691] is not enough (request id: 2026040518085296083695432951980)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:08:59,340 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [658] is not enough (request id: 2026040518085766275729350587659)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:09:07,676 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [654] is not enough (request id: 2026040518090284405347578096552)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:09:11,266 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [771] is not enough (request id: 2026040518090861951026137965195)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:09:14,452 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [649] is not enough (request id: 2026040518091380274704964985559)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:09:16,297 - WARNING - [6_2] attempt 2 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [771] is not enough (request id: 2026040518091486513026976037219)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:09:16,623 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [668] is not enough (request id: 2026040518091521526782595171965)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:09:16,841 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [677] is not enough (request id: 202604051809157221442664899814)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:09:20,965 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [819] is not enough (request id: 2026040518091954144963252615181)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:09:24,421 - WARNING - [6_2] 90/1000 items failed
+2026-04-05 18:09:24,428 - INFO - Start task 6_3 | 500 samples | workers=30
+2026-04-05 18:09:37,718 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [694] is not enough (request id: 2026040518092733819767503940061)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:09:50,760 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [631] is not enough (request id: 2026040518093499092967018143748)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:09:51,537 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [694] is not enough (request id: 2026040518093567090260158928647)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:09:57,051 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [669] is not enough (request id: 2026040518095162333861800592038)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:10:01,513 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [675] is not enough (request id: 2026040518095637742554044312436)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:10:06,510 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [604] is not enough (request id: 2026040518100067801548404671507)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:10:06,532 - WARNING - [6_3] attempt 2 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [669] is not enough (request id: 2026040518100064603837122972917)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:10:08,799 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [633] is not enough (request id: 2026040518100247983515431011828)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:10:13,342 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [669] is not enough (request id: 2026040518100620901611027247073)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:10:14,212 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [641] is not enough (request id: 2026040518100671963229902506766)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:10:22,007 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [654] is not enough (request id: 2026040518101453476218334812861)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:10:26,108 - WARNING - [6_3] attempt 2 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [669] is not enough (request id: 2026040518101693919732973756641)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:10:27,858 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [704] is not enough (request id: 2026040518101957114548112340584)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:10:30,757 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [643] is not enough (request id: 2026040518102558997257340458507)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:10:35,442 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [628] is not enough (request id: 2026040518103073051128011213460)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:10:49,774 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:49,790 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:49,821 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:49,901 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:50,028 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:50,124 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:51,019 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:51,193 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:51,303 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:51,303 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:51,367 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:51,589 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:51,797 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:51,877 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:52,191 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:52,495 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:52,751 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:52,798 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:52,878 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:53,300 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:53,300 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:53,827 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:55,553 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:55,741 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:56,567 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:57,332 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:57,492 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:57,648 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:10:59,833 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:11,519 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:11,822 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:11,822 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:11,854 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:11,934 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:12,061 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:12,173 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:13,066 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:13,240 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:13,352 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:13,352 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:13,416 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:13,639 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:13,863 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:13,927 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:14,226 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:14,544 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:14,799 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:14,862 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:14,941 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:15,352 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:15,352 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:15,861 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:17,607 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:17,799 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:18,606 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:19,368 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:19,541 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:19,699 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:21,887 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:32,999 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:33,556 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:33,875 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:33,875 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:33,891 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:34,114 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:34,226 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:35,133 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:35,307 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:35,418 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:35,418 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:35,482 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:35,706 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:35,914 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:35,930 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:35,978 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:36,276 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:36,595 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:36,851 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:36,978 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:37,407 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:37,407 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:37,916 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:39,651 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:39,842 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:40,607 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:40,655 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:41,387 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:41,737 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:43,935 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:54,933 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:54,933 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:54,949 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:55,029 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:55,173 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:55,285 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:55,604 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:56,192 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:56,352 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:56,479 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:56,479 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:56,527 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:56,766 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:56,973 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:57,019 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:57,348 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:57,649 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:57,904 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:57,984 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:58,030 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:58,475 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:58,475 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:11:58,988 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:00,706 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:00,898 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:01,728 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:02,438 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:02,644 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:02,788 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:04,983 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:16,655 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:16,988 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:16,988 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:16,988 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:17,049 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:17,208 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:17,320 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:18,236 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:18,395 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:18,523 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:18,523 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:18,571 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:18,810 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:19,013 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:19,060 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:19,410 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:19,696 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:19,952 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:20,019 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:20,065 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:20,575 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:20,575 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:21,037 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:22,754 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:22,946 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:23,772 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:24,486 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:24,694 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:24,852 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:27,030 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:38,101 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:38,692 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:39,054 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:39,054 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:39,054 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:39,260 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:39,372 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:40,288 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:40,431 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:40,558 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:40,558 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:40,606 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:40,861 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:41,052 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:41,070 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:41,100 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:41,446 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:41,733 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:42,005 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:42,114 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:42,623 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:42,623 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:43,084 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:44,816 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:45,006 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:45,767 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:45,828 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:46,543 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:46,923 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:12:49,064 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:00,174 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:00,174 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:00,174 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:00,174 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:00,316 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:00,427 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:00,746 - WARNING - [6_3] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:01,328 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:01,471 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:01,614 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:01,614 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:01,662 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:01,902 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:02,105 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:02,151 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:02,496 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:02,784 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:03,055 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:03,118 - WARNING - [6_3] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:03,165 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:03,689 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:03,689 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:13:04,131 - WARNING - [6_3] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:14:21,639 - INFO - Use pytorch device_name: cuda:0
+2026-04-05 18:14:21,639 - INFO - Load pretrained SentenceTransformer: shibing624/text2vec-base-chinese
+2026-04-05 18:14:26,216 - INFO - Law retriever initialized. Total: 45199
+2026-04-05 18:14:26,220 - INFO - Start task 6_2 | 1000 samples
+2026-04-05 18:14:48,213 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:15:11,244 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:15:34,292 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:15:55,324 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:16:18,372 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:16:32,390 - WARNING - [6_2] attempt 3 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [710] is not enough (request id: 2026040518163010570520564989031)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:17:50,246 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [695] is not enough (request id: 2026040518175067481895202352760)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:19:07,667 - INFO - Use pytorch device_name: cuda:0
+2026-04-05 18:19:07,667 - INFO - Load pretrained SentenceTransformer: shibing624/text2vec-base-chinese
+2026-04-05 18:19:12,356 - INFO - Law retriever initialized. Total: 45199
+2026-04-05 18:19:12,359 - INFO - Start task 6_2 | 1000 samples | workers=10
+2026-04-05 18:19:30,043 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [714] is not enough (request id: 202604051819162104948085864935)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:19:37,917 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [664] is not enough (request id: 2026040518193534080585220792362)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:20:18,383 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [742] is not enough (request id: 2026040518201660282229897260957)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:20:25,844 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [650] is not enough (request id: 2026040518202160435612047015925)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:20:49,939 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:20:51,571 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:20:53,093 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:20:57,662 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:20:57,838 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:05,018 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:09,924 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:09,924 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:10,945 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:12,591 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:14,119 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:15,889 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:18,666 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:18,841 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:26,042 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:29,492 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:30,955 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:30,955 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:31,988 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:33,606 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:35,144 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:36,880 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:39,675 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:39,851 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:47,056 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:50,527 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:50,989 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:51,986 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:51,986 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:52,636 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:54,150 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:57,904 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:58,701 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:21:58,891 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:06,086 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:11,025 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:11,549 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:12,026 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:12,058 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:13,649 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:15,160 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:16,939 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:19,763 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:19,906 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:27,121 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:30,575 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:32,039 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:33,046 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:33,062 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:34,652 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:36,180 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:37,960 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:40,799 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:40,943 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:48,125 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:51,590 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:52,054 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:53,057 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:53,678 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:54,087 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:55,277 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:58,974 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:59,817 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:22:59,992 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:23:07,180 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:23:12,101 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:23:12,589 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:23:13,067 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:23:13,115 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:23:14,685 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:23:16,302 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:23:18,004 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:23:20,856 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:23:20,984 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:23:28,193 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:23:31,674 - WARNING - [6_2] attempt 1 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:23:34,094 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:23:34,126 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:23:34,142 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:23:35,714 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:23:37,316 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:23:39,016 - WARNING - [6_2] attempt 2 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:23:41,879 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:23:41,990 - WARNING - [6_2] attempt 3 failed: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+2026-04-05 18:24:15,520 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [633] is not enough (request id: 2026040518241119762976342106390)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:24:20,960 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [841] is not enough (request id: 2026040518241666580950072790101)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:24:31,554 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [750] is not enough (request id: 2026040518242720634060326610036)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:24:36,219 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [678] is not enough (request id: 2026040518242921305782818062295)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:25:14,533 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [684] is not enough (request id: 2026040518251113092663983081894)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:25:43,148 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [739] is not enough (request id: 2026040518254039964476996509622)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:25:52,550 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [731] is not enough (request id: 2026040518254189387848604290833)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:26:45,940 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [710] is not enough (request id: 2026040518263864888327208258550)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:26:48,092 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [651] is not enough (request id: 2026040518264279694208697576169)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:27:11,207 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [672] is not enough (request id: 2026040518270999354870518147037)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:27:21,810 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [641] is not enough (request id: 2026040518271848904443919172964)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:27:24,579 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [630] is not enough (request id: 2026040518272445610564182759673)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:27:41,401 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [778] is not enough (request id: 2026040518273625757489494410124)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:27:46,711 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [650] is not enough (request id: 2026040518274513684010922865343)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:27:51,054 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [764] is not enough (request id: 2026040518274833011713743456471)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:27:53,312 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [664] is not enough (request id: 2026040518275015351758616389526)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:28:11,369 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [688] is not enough (request id: 2026040518280957604766891245167)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:28:39,261 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [626] is not enough (request id: 2026040518283020676498071947592)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:28:44,006 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [649] is not enough (request id: 2026040518284015565322713855412)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:28:53,496 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [605] is not enough (request id: 2026040518285210510549784838211)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:29:00,988 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [798] is not enough (request id: 2026040518290026322382512564350)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:29:25,409 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [617] is not enough (request id: 2026040518292475138815962282827)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:29:32,555 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [683] is not enough (request id: 2026040518293073388981874043213)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:29:51,380 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [658] is not enough (request id: 2026040518294882565134166539583)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:30:07,669 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [645] is not enough (request id: 2026040518300796581037888909024)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:30:16,489 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [659] is not enough (request id: 2026040518301598715315153277695)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:30:18,439 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [662] is not enough (request id: 2026040518301687155660021531569)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:30:31,871 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [752] is not enough (request id: 2026040518302919771745012275972)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:30:39,236 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [681] is not enough (request id: 2026040518303828009762023806313)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:31:05,965 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [665] is not enough (request id: 2026040518310525740261329241581)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:31:11,600 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [670] is not enough (request id: 2026040518310995264086469991988)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:31:23,766 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [753] is not enough (request id: 2026040518312210507162428597063)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:31:40,113 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [713] is not enough (request id: 2026040518313756607396209027669)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:31:41,407 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [712] is not enough (request id: 2026040518313867028672120296424)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:31:46,668 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [712] is not enough (request id: 2026040518314666838456893666275)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:31:48,371 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [645] is not enough (request id: 2026040518314841575193099070092)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:31:53,851 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [757] is not enough (request id: 2026040518315211633056658316109)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:32:01,208 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [695] is not enough (request id: 2026040518315976655649890197592)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:32:11,489 - WARNING - [6_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [678] is not enough (request id: 2026040518321097697999298245915)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:32:21,466 - WARNING - [6_2] 25/1000 items failed
+2026-04-05 18:32:21,469 - INFO - Start task 6_3 | 500 samples | workers=10
+2026-04-05 18:32:47,689 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [669] is not enough (request id: 2026040518324641167993858554224)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:33:08,303 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [635] is not enough (request id: 2026040518330797970432837803276)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:33:17,827 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [689] is not enough (request id: 2026040518331768065648255913768)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:33:48,393 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [718] is not enough (request id: 2026040518334885615418042398875)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:33:59,736 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [700] is not enough (request id: 2026040518335738283443653123621)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:34:11,664 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [731] is not enough (request id: 2026040518341051493593694147470)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:34:19,620 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [675] is not enough (request id: 2026040518341965054698228192973)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:34:20,468 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [663] is not enough (request id: 2026040518342092581516519242218)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:34:30,362 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [651] is not enough (request id: 2026040518342984447215861899647)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:34:50,375 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [671] is not enough (request id: 2026040518344890171581281998916)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:35:13,949 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [741] is not enough (request id: 2026040518351253794791981188187)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:35:14,916 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [623] is not enough (request id: 2026040518351287171986325911460)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:35:15,847 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [649] is not enough (request id: 2026040518351368421833334249349)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:35:36,678 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [603] is not enough (request id: 2026040518353591671235645303666)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:35:47,661 - WARNING - [6_3] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [571] is not enough (request id: 2026040518354595879725377344068)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:35:55,878 - INFO - Patch script completed.
+2026-04-05 19:20:16,919 - INFO - Use pytorch device_name: cuda:0
+2026-04-05 19:20:16,919 - INFO - Load pretrained SentenceTransformer: shibing624/text2vec-base-chinese
+2026-04-05 19:20:26,979 - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /shibing624/text2vec-base-chinese/resolve/main/modules.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x2b1418a0bf0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 78e25aa3-660f-466f-a081-bd80e7188781)')' thrown while requesting HEAD https://huggingface.co/shibing624/text2vec-base-chinese/resolve/main/./modules.json
+2026-04-05 19:20:26,979 - WARNING - Retrying in 1s [Retry 1/5].
+2026-04-05 19:20:37,989 - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /shibing624/text2vec-base-chinese/resolve/main/modules.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x2b141c86ff0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 6d60e9a4-c2d5-4c6c-8fce-b81dbc6219a0)')' thrown while requesting HEAD https://huggingface.co/shibing624/text2vec-base-chinese/resolve/main/./modules.json
+2026-04-05 19:20:37,989 - WARNING - Retrying in 2s [Retry 2/5].
+2026-04-05 19:20:49,994 - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /shibing624/text2vec-base-chinese/resolve/main/modules.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x2b141ce98b0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 82f4402d-1426-4205-b276-36b6f84dac2d)')' thrown while requesting HEAD https://huggingface.co/shibing624/text2vec-base-chinese/resolve/main/./modules.json
+2026-04-05 19:20:49,994 - WARNING - Retrying in 4s [Retry 3/5].
+2026-04-05 19:21:04,062 - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /shibing624/text2vec-base-chinese/resolve/main/modules.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x2b14181b8c0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 7ca39fbd-ba94-4edc-9f22-8705ec27388a)')' thrown while requesting HEAD https://huggingface.co/shibing624/text2vec-base-chinese/resolve/main/./modules.json
+2026-04-05 19:21:04,062 - WARNING - Retrying in 8s [Retry 4/5].
+2026-04-05 19:21:22,073 - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /shibing624/text2vec-base-chinese/resolve/main/modules.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x2b14012ab40>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 62615fcd-f22b-4aac-9b07-10a2dd3cfbaa)')' thrown while requesting HEAD https://huggingface.co/shibing624/text2vec-base-chinese/resolve/main/./modules.json
+2026-04-05 19:21:22,073 - WARNING - Retrying in 8s [Retry 5/5].
+2026-04-05 19:21:40,131 - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /shibing624/text2vec-base-chinese/resolve/main/modules.json (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x2b141ce82f0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 4b167235-775c-4011-b715-02096d04a9bf)')' thrown while requesting HEAD https://huggingface.co/shibing624/text2vec-base-chinese/resolve/main/./modules.json
+2026-04-05 19:21:50,396 - INFO - Use pytorch device_name: cuda:0
+2026-04-05 19:21:50,396 - INFO - Load pretrained SentenceTransformer: shibing624/text2vec-base-chinese
+2026-04-05 19:21:56,080 - INFO - Law retriever initialized. Total: 45199
+2026-04-05 19:21:56,085 - INFO - Start task 1_2 | 1000 samples | workers=10
+2026-04-05 19:22:10,310 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [695] is not enough (request id: 2026040519221034977970761968672)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:22:13,695 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [673] is not enough (request id: 2026040519221237978103415652886)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:22:31,417 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [667] is not enough (request id: 2026040519223175389321960171895)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:22:39,059 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [673] is not enough (request id: 2026040519223946287859987088990)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:22:46,215 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [654] is not enough (request id: 2026040519224551585349522822087)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:22:51,276 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [695] is not enough (request id: 2026040519225041582718976087979)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:23:01,874 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [676] is not enough (request id: 202604051923001775863710011667)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:23:11,937 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [677] is not enough (request id: 2026040519231147355000624035296)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:23:21,273 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [675] is not enough (request id: 2026040519231884881488933033267)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:23:26,862 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [698] is not enough (request id: 2026040519232540203452041618185)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:23:33,861 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [680] is not enough (request id: 20260405192331505399477072340)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:23:38,938 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [685] is not enough (request id: 2026040519233767112386306617254)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:23:59,264 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [643] is not enough (request id: 2026040519235693508527175775876)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:24:10,462 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [642] is not enough (request id: 2026040519240577666937524714337)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:24:12,248 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [631] is not enough (request id: 202604051924078720274870102958)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:24:19,732 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [715] is not enough (request id: 2026040519241510112804691010284)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:24:34,095 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [709] is not enough (request id: 2026040519242852131072550229548)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:25:06,552 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [646] is not enough (request id: 2026040519250467201068563655079)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:25:16,992 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [636] is not enough (request id: 2026040519251519280746273677915)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:26:23,734 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [642] is not enough (request id: 2026040519260969704001113393685)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:26:33,736 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [725] is not enough (request id: 2026040519262917352233801612298)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:26:38,880 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [699] is not enough (request id: 2026040519263661719163366303841)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:26:53,673 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [719] is not enough (request id: 2026040519265221288263598264125)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:26:56,022 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [761] is not enough (request id: 2026040519265585189428339994532)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:27:21,382 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [673] is not enough (request id: 2026040519271496520281125379805)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:27:29,667 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [706] is not enough (request id: 2026040519272237998979176754298)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:28:02,363 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [704] is not enough (request id: 2026040519280122449313710482325)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:28:04,932 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [747] is not enough (request id: 2026040519280222726829074836149)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:28:23,283 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'system cpu overloaded (request id: 2026040519281324790626061166441)', 'localized_message': 'Unknown error', 'type': 'one_api_error', 'param': '', 'code': 'system_cpu_overloaded'}}
+2026-04-05 19:28:23,698 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [804] is not enough (request id: 2026040519281327634523114254096)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:28:24,403 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [739] is not enough (request id: 2026040519281514211251080382723)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:28:25,225 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [703] is not enough (request id: 202604051928188874974525963728)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:28:25,813 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'system cpu overloaded (request id: 2026040519281728876251979642921)', 'localized_message': 'Unknown error', 'type': 'one_api_error', 'param': '', 'code': 'system_cpu_overloaded'}}
+2026-04-05 19:28:26,111 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'system cpu overloaded (request id: 2026040519282354813052134498289)', 'localized_message': 'Unknown error', 'type': 'one_api_error', 'param': '', 'code': 'system_cpu_overloaded'}}
+2026-04-05 19:28:29,102 - WARNING - [1_2] attempt 2 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [759] is not enough (request id: 2026040519282795674666422968778)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:28:29,135 - WARNING - [1_2] attempt 2 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [804] is not enough (request id: 2026040519282836491031265600395)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:28:45,676 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [683] is not enough (request id: 2026040519283931818517970264014)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:28:46,120 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [714] is not enough (request id: 2026040519284245341125525482456)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:28:51,817 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [712] is not enough (request id: 2026040519285081934061379244836)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:28:53,062 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [716] is not enough (request id: 2026040519285161492731141492362)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:28:56,846 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [730] is not enough (request id: 2026040519285633760280983082557)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:28:59,880 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [683] is not enough (request id: 2026040519285950139782043559291)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:29:24,156 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [712] is not enough (request id: 2026040519292370863173816656598)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:29:30,270 - WARNING - [1_2] attempt 2 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [712] is not enough (request id: 2026040519292883938112649615462)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:29:58,765 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [722] is not enough (request id: 2026040519295497872986093151824)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:30:38,895 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [707] is not enough (request id: 2026040519303815655344409066151)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:31:12,592 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [798] is not enough (request id: 2026040519310839801544708629933)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:31:13,246 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [766] is not enough (request id: 202604051931098581234538243502)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:31:23,939 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [715] is not enough (request id: 202604051931176040634823699416)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:31:27,096 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [784] is not enough (request id: 2026040519311815654154980958550)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:31:27,102 - WARNING - [1_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [713] is not enough (request id: 2026040519311943918447484298342)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:31:53,795 - INFO - Start task 2_1 | 500 samples | workers=10
+2026-04-05 19:31:59,525 - WARNING - [2_1] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [666] is not enough (request id: 2026040519315659857673004115475)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:32:06,941 - WARNING - [2_1] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [649] is not enough (request id: 2026040519320671042710353704587)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:32:22,650 - WARNING - [2_1] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [658] is not enough (request id: 2026040519322082887581375903900)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:32:53,700 - WARNING - [2_1] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [675] is not enough (request id: 2026040519325283481338835393973)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:33:16,435 - WARNING - [2_1] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [668] is not enough (request id: 202604051933146211373204218658)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:33:17,710 - WARNING - [2_1] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [671] is not enough (request id: 2026040519331415126503641072841)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:33:44,962 - WARNING - [2_1] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [698] is not enough (request id: 202604051933444570055232456165)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:33:53,708 - WARNING - [2_1] attempt 2 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [698] is not enough (request id: 2026040519334964666113329873808)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:34:07,930 - WARNING - [2_1] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [630] is not enough (request id: 2026040519340468287119582511124)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:34:19,143 - WARNING - [2_1] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [695] is not enough (request id: 2026040519341676709177208936084)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:34:29,068 - WARNING - [2_1] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [683] is not enough (request id: 2026040519342415120412015599317)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:34:41,495 - WARNING - [2_1] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [658] is not enough (request id: 2026040519343664321330202018215)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:34:56,119 - WARNING - [2_1] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [645] is not enough (request id: 2026040519345221888224428185064)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:35:21,163 - WARNING - [2_1] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [618] is not enough (request id: 2026040519351777167894796755431)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:35:28,691 - WARNING - [2_1] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [654] is not enough (request id: 2026040519352726812978954592899)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:35:38,235 - WARNING - [2_1] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [685] is not enough (request id: 2026040519353653882808739905676)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:35:39,407 - WARNING - [2_1] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [619] is not enough (request id: 2026040519353887434713102548263)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:35:58,351 - WARNING - [2_1] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [645] is not enough (request id: 2026040519355464518813028814811)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:36:01,382 - WARNING - [2_1] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [657] is not enough (request id: 2026040519355844535244683247896)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:36:13,631 - WARNING - [2_1] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [659] is not enough (request id: 2026040519360851508753360673728)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:36:14,972 - WARNING - [2_1] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [697] is not enough (request id: 2026040519361170488602972355744)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:36:26,116 - INFO - Start task 3_2 | 1000 samples | workers=10
+2026-04-05 19:36:31,958 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [877] is not enough (request id: 2026040519362895003314865470642)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:36:46,439 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [795] is not enough (request id: 2026040519363940268674653532417)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:36:48,243 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [785] is not enough (request id: 2026040519364193780894182055235)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:36:49,941 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [684] is not enough (request id: 2026040519364480951310799068077)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:36:54,595 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [716] is not enough (request id: 2026040519365381986647642964448)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:36:56,602 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [853] is not enough (request id: 2026040519365526145151141726716)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:37:03,745 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [722] is not enough (request id: 2026040519365945761549655343504)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:37:30,090 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [908] is not enough (request id: 202604051937295001994626996701)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:37:32,816 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [742] is not enough (request id: 2026040519373039574096116544389)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:38:11,461 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [734] is not enough (request id: 2026040519381039600540796762969)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:38:55,354 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [723] is not enough (request id: 2026040519384985688034571325330)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:39:15,679 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [784] is not enough (request id: 202604051939159856020598014206)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:39:20,656 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [770] is not enough (request id: 2026040519391964975034377128210)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:39:21,681 - WARNING - [3_2] attempt 2 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [784] is not enough (request id: 2026040519392036795559434433832)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:39:34,427 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [765] is not enough (request id: 2026040519392771959367844407151)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:39:46,681 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [694] is not enough (request id: 2026040519393466805555921985375)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:39:59,245 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [838] is not enough (request id: 2026040519394574394846691191231)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:39:59,938 - WARNING - [3_2] attempt 2 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [694] is not enough (request id: 2026040519395138539125757650082)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:40:47,391 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [709] is not enough (request id: 202604051940387368363019531154)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:40:57,432 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [791] is not enough (request id: 2026040519404647236462684870164)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:41:10,749 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [708] is not enough (request id: 2026040519410557472422199453449)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:41:13,109 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [691] is not enough (request id: 2026040519410627401766970454417)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:41:33,397 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [723] is not enough (request id: 2026040519413321114083265802941)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:41:48,487 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [811] is not enough (request id: 2026040519414280344856826752132)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:42:56,235 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [914] is not enough (request id: 2026040519422813340228605579707)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:45:30,336 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [758] is not enough (request id: 2026040519452371241970941074438)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:45:33,587 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [1058] is not enough (request id: 2026040519452991483332705391618)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:45:41,171 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [865] is not enough (request id: 2026040519453542785853986066295)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:46:19,471 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [731] is not enough (request id: 2026040519460359316405475966506)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:47:30,904 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [800] is not enough (request id: 2026040519463412204301533297865)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:47:41,901 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [794] is not enough (request id: 202604051947405214226524471436)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:47:50,717 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [913] is not enough (request id: 202604051947495603853714612921)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:48:16,315 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [1071] is not enough (request id: 202604051947599472384717731376)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:48:29,557 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [702] is not enough (request id: 2026040519482187367494071448821)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:48:31,134 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [696] is not enough (request id: 2026040519482426243175407552201)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:48:44,767 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [948] is not enough (request id: 2026040519483928020307769174792)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:50:00,431 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [821] is not enough (request id: 2026040519500027047787587960345)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:50:04,327 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [708] is not enough (request id: 2026040519500376431847742410149)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:50:05,131 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [799] is not enough (request id: 2026040519500419779254494581851)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:50:17,259 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [1089] is not enough (request id: 2026040519501223928724486684518)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:50:32,124 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [694] is not enough (request id: 2026040519502493556477304374300)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:50:35,988 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [1247] is not enough (request id: 2026040519503156659129468783772)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:50:42,126 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [1203] is not enough (request id: 202604051950374173580522413458)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:50:57,793 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [791] is not enough (request id: 2026040519504418637130758384552)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:51:10,668 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [927] is not enough (request id: 2026040519510239801514695050259)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:51:11,737 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [791] is not enough (request id: 2026040519510563580138933146494)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:51:14,602 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [1025] is not enough (request id: 2026040519511328613241038165438)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:51:22,593 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [979] is not enough (request id: 2026040519511767338230264070347)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:51:56,827 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [698] is not enough (request id: 2026040519514327839243411692232)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:51:57,077 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [771] is not enough (request id: 2026040519514754112754554324020)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:51:58,448 - WARNING - [3_2] attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [704] is not enough (request id: 2026040519515355425340395959667)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 19:52:02,155 - INFO - Patch script completed.

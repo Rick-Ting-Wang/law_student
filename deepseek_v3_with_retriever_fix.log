@@ -1,0 +1,74 @@
+2026-04-05 18:43:57,811 - INFO - [4_1] Fixing 2 failed items: indices=[260, 261]
+2026-04-05 18:44:05,083 - INFO - [4_1] Fix succeeded on attempt 1 | input[:50]=查询案例:原告：陈某1，女，1965年11月12日出生，汉族，住河南省沁阳市。被告：崔某1，男，19
+2026-04-05 18:44:09,651 - INFO - [4_1] Fix succeeded on attempt 1 | input[:50]=查询案例:原告：陆某1，男，1972年9月20日出生，汉族，住四川省，被告：陈某1，男，1975年1
+2026-04-05 18:44:09,666 - INFO - [4_1] All 2 failed items fixed.
+2026-04-05 18:44:09,719 - INFO - [6_2] Fixing 25 failed items: indices=[79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 108, 110]
+2026-04-05 18:44:11,439 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=在售卖商品中，以下哪些情况不符合社会的普遍道德要求？
+A: 在广告宣传中，使用业界领先等字样。
+B:
+2026-04-05 18:44:16,793 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=在售卖商品中，以下哪些情况符合社会的普遍道德要求？
+A: 由于商品临期，以低于成本价的价格销售产品。
+2026-04-05 18:44:19,871 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=在商业交往中，以下哪些情况不符合社会的普遍道德要求？
+A: 编造竞争企业的产品缺陷信息并传播。
+B:
+2026-04-05 18:44:23,800 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=作为一名企业家，以下哪种为了提升知名度德宣传方式不合适?
+A: 砸重金在主流社交媒体中进行广告投放。
+2026-04-05 18:44:27,685 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=软件服务经营者在拉去赞助的过程中，可以选择以下哪种方案。
+A: 在软件打开过程中添加强制跳转的广告。
+2026-04-05 18:44:30,021 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=以下哪些在售卖商品中出现的行为不合道德要求？
+A: 以次充好。
+B: 混装其他商品。
+C: 虚假宣传
+2026-04-05 18:44:50,738 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=为了推动市场发展，以下哪些行为值得提倡？
+A: 经营者自愿联合，依法实施集中，扩大经营规模，提高市场
+2026-04-05 18:44:58,284 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=为了促使市场主体公平竞争，以下哪种行为是值得提倡的？
+A: 上下游企业之间达成“攻守同盟”，合力控制
+2026-04-05 18:45:00,415 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=企业之间达成的以下哪些协议是合理的？
+A: 企业之间达成了固定同类产品价格的协议。
+B: 为了保证价
+2026-04-05 18:45:01,771 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=为了方便对客户的维持，以下哪种方式是合理的？
+A: 固定客户向其他人转卖产品的价格。
+B: 约定客户
+2026-04-05 18:45:03,232 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=以下哪些方式，符合基本的社会经济发展需求。
+A: 为了提高专业分工程度，经营者之间签署固定上下游产品
+2026-04-05 18:45:05,252 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=行业协会在推动经济发展过程汇总，可以采用的方案有哪些？
+A: 制定具体的生产指导手册。
+B: 定期巡
+2026-04-05 18:45:07,067 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=作为本区域本行业内具备市场支配地位的企业，在商业交往中，可以从事以下哪些行为？
+A: 由于具有主导地
+2026-04-05 18:45:08,448 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=作为本区域本行业内具备市场支配地位的企业，在商业交往中，可以从事以下哪些行为？
+A: 售卖商品时，要
+2026-04-05 18:45:10,593 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=企业合并过程中，可以选择的方案有哪些？
+A: 企业合并后具有或者可能具有排除、限制竞争效果。
+B: 
+2026-04-05 18:45:18,084 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=反垄断调查机构在调查过程中，可以从事哪些行为？
+A: 进入被调查的经营者的营业场所或者其他有关场所进
+2026-04-05 18:45:20,197 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=经营者在经营过程中可以选择的行为有哪些？
+A: 遵循自愿、平等、公平、诚信的原则。
+B: 遵循特定商
+2026-04-05 18:45:22,312 - WARNING - [6_2] Fix attempt 1 failed: Unexpected API response: {'error': {'message': 'user [31] quota [5] preConsumedQuota [527] is not enough (request id: 2026040518452283357313032782710)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}
+2026-04-05 18:45:24,975 - INFO - [6_2] Fix succeeded on attempt 2 | input[:50]=以下哪种宣传方式是合适的？
+A: 对商品作部分性的宣传或者对比。
+B: 将科学上未定论的观点、现象等
+2026-04-05 18:45:26,912 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=以下哪种宣传方式是合适的？
+A: 在广告中暗示商品与某知名企业具有联系。
+B: 将他人注册商标、未注
+2026-04-05 18:45:28,430 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=可以使用以下哪些标识用以宣传自己的产品？
+A: 他人有一定影响的企业名称
+B: 他人有一定影响的社会
+2026-04-05 18:45:30,180 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=专利所有权人在维护专利权利时，以下哪些方案是合理的？
+A: 对于有侵犯自身专利的经营者，及时进行沟通
+2026-04-05 18:45:32,107 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=行业协会在引导产品价格合理变动中，不应当采取的方案有哪些？
+A: 制定价格推荐标准。
+B: 制定价格
+2026-04-05 18:45:33,250 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=消费者在购买商品的过程中，商家应当做到哪些保障？
+A: 保障商品的质量，避免因商品的质量问题伤害消费
+2026-04-05 18:45:35,640 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=商家在售卖商品过程中，可以采取以下哪些行动？
+A: 明示生产日期。
+B: 隐藏主要有效成分。
+C: 
+2026-04-05 18:45:37,198 - INFO - [6_2] Fix succeeded on attempt 1 | input[:50]=消费者购买商品后，由于商品爆炸受伤了，以下哪种方案是可行的？
+A: 在未与商家联系的情况下，在网络平
+2026-04-05 18:45:37,204 - INFO - [6_2] All 25 failed items fixed.
+2026-04-05 18:45:37,205 - INFO - Fix script completed. Processed 2 file(s).
+2026-04-05 19:52:38,184 - INFO - Fix script completed. Processed 0 file(s).

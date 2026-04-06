@@ -1,0 +1,7 @@
+2026-04-05 11:04:25,535 - INFO - [4_1] Fixing 1 failed items: indices=[200]
+2026-04-05 11:04:40,985 - INFO - [4_1] Fix succeeded on attempt 1 | input[:50]=查询案例:原告：黄某1，男，1988年12月2日出生，汉族，住河南省商丘市。被告：杨某1，男，198
+2026-04-05 11:04:41,004 - INFO - [4_1] All failed items fixed successfully.
+2026-04-05 11:04:41,062 - INFO - [5_2] Fixing 1 failed items: indices=[636]
+2026-04-05 11:05:14,590 - INFO - [5_2] Fix succeeded on attempt 1 | input[:50]=基本事实:指控被告人刘继涛、杜栋、张训会犯非法吸收公众存款罪一案，于2016年2年6月2日作出（20
+2026-04-05 11:05:14,629 - INFO - [5_2] All failed items fixed successfully.
+2026-04-05 11:05:14,639 - INFO - Fix script completed. Fixed 2 file(s).
