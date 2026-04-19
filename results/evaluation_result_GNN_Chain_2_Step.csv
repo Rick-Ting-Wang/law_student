@@ -1,0 +1,15 @@
+﻿model,task,Accuracy,F1
+GNN_Chain,1_1,0.262,0.5751
+GNN_Chain,1_2,0.759,0.7736
+GNN_Chain,1_3,0.0867,0.4739
+GNN_Chain,2_1,0.562,0.7699
+GNN_Chain,2_2,0.2333,0.5104
+GNN_Chain,2_3,0.69,0.815
+GNN_Chain,2_4,0.82,0.8347
+GNN_Chain,2_5,0.926,0.942
+GNN_Chain,3_1,0.757,0.8909
+GNN_Chain,3_2,0.649,0.708
+GNN_Chain,3_3,0.163,0.1637
+GNN_Chain,3_4,0.19,0.489
+GNN_Chain,3_5,0.6222,0.644
+GNN_Chain,3_6,0.268,0.4983
