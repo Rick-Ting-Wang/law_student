@@ -1,0 +1,15 @@
+﻿model,task,Accuracy,F1
+qwen_7B_fp16_with_retriever,1_1,0.27,0.5539
+qwen_7B_fp16_with_retriever,1_2,0.364,0.3711
+qwen_7B_fp16_with_retriever,1_3,0.1667,0.5196
+qwen_7B_fp16_with_retriever,2_1,0.636,0.7151
+qwen_7B_fp16_with_retriever,2_2,0.3833,0.4883
+qwen_7B_fp16_with_retriever,2_3,0.85,0.854
+qwen_7B_fp16_with_retriever,2_4,0.634,0.7129
+qwen_7B_fp16_with_retriever,2_5,0.906,0.911
+qwen_7B_fp16_with_retriever,3_1,0.773,0.8803
+qwen_7B_fp16_with_retriever,3_2,0.76,0.7633
+qwen_7B_fp16_with_retriever,3_3,0.458,0.4584
+qwen_7B_fp16_with_retriever,3_4,0.24,0.4822
+qwen_7B_fp16_with_retriever,3_5,0.3602,0.3619
+qwen_7B_fp16_with_retriever,3_6,0.45,0.4603
