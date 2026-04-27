@@ -1,196 +1,364 @@
 """
-build_chroma_db_law.py
-======================
-将 lawtxtversion/ 目录下所有 .txt 法律文本向量化，
-使用 Lawformer (thunlp/Lawformer) 作为 Embedding 模型，
-存入本地 ChromaDB 持久化向量数据库。
-
-Lawformer 是清华大学专为中文法律长文本训练的模型，
-基于 Longformer 架构，最大支持 4096 tokens。
-
-依赖安装：
-    pip install chromadb transformers torch
-
-用法：
-    python build_chroma_db_law.py
-    python build_chroma_db_law.py --law_dir ./lawtxtversion --db_dir ./chroma_law_db
+Legal Case Matcher + KG Reasoner
+第一阶段：用 Lawformer 检索最相似的法律文本（chroma_law_db）
+第二阶段：加载对应法律文件的 CompGCN 模型和 KG，进行多跳推理
 """
 
-import argparse
+import os
+import json
+import logging
 import torch
-import chromadb
+import numpy as np
 from pathlib import Path
+from sentence_transformers import SentenceTransformer
+import chromadb
 from transformers import AutoTokenizer, AutoModel
 
-# ── 配置 ────────────────────────────────────────────────────────────────────
-DEFAULT_LAW_DIR = "./lawtxtversion"
-DEFAULT_DB_DIR  = "./chroma_law_db"
-COLLECTION_NAME = "law_collection"
-
-# Lawformer 官方模型（清华大学，中文法律专用）
+# =============================
+# 配置
+# =============================
+# 法律文本向量库（Lawformer）
+LAW_DB_PATH = "./chroma_law_db"
+LAW_COLLECTION = "law_collection"
 LAWFORMER_MODEL = "thunlp/Lawformer"
-# 若已本地下载，改为本地路径，例如：
-# LAWFORMER_MODEL = "D:/models/Lawformer"
+LAW_TEXT_DIR = "./lawtxtversion"          # 原始法律文本存放目录
 
-MAX_SEQ_LEN   = 4096  # Lawformer 基于 Longformer，支持最长 4096 tokens
-CHUNK_SIZE    = 1500  # 每块字符数（中文约 1500 字 ≈ 2000 tokens，留余量）
-CHUNK_OVERLAP = 150   # 相邻块重叠字符数，保证上下文连贯
-BATCH_SIZE    = 2     # Lawformer 较大，显存不足时调小到 1
-# ────────────────────────────────────────────────────────────────────────────
+# 实体向量库（text2vec）及模型/知识图谱目录
+ENTITY_DB_PATH = "./chroma_db"
+ENTITY_COLLECTION = "china_law"
+TEXT2VEC_MODEL = "shibing624/text2vec-base-chinese"
+MODEL_DIR = "./models"
+KG_DIR = "./kg_store"
 
+EMB_DIM = 768
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-def load_model(model_name: str):
-    """加载 Lawformer tokenizer 和模型。"""
-    print(f"[1/4] 加载 Lawformer 模型：{model_name}")
-    print("      首次运行会从 HuggingFace 下载模型，请耐心等待……")
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModel.from_pretrained(model_name)
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    model = model.to(device)
-    model.eval()
-    print(f"      模型加载完成，使用设备：{device}")
-    return tokenizer, model, device
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 
-def mean_pooling(model_output, attention_mask):
-    """对最后一层隐藏状态做均值池化，得到定长句子向量。"""
-    token_embeddings = model_output.last_hidden_state        # (B, L, H)
-    mask_expanded = (
-        attention_mask.unsqueeze(-1)
-        .expand(token_embeddings.size())
-        .float()
-    )
-    return (token_embeddings * mask_expanded).sum(1) / mask_expanded.sum(1).clamp(min=1e-9)
+# =============================
+# 1. 法律文本检索器（Lawformer）
+# =============================
+class LawRetriever:
+    def __init__(self, db_path, collection_name, model_name, law_text_dir):
+        # 加载 Lawformer 模型
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+        self.model = AutoModel.from_pretrained(model_name).to(DEVICE)
+        self.model.eval()
 
+        # 连接 ChromaDB
+        self.client = chromadb.PersistentClient(path=db_path)
+        self.collection = self.client.get_collection(name=collection_name)
 
-@torch.no_grad()
-def encode_texts(texts: list, tokenizer, model, device) -> list:
-    """将一批文本编码为 L2 归一化向量列表。"""
-    encoded = tokenizer(
-        texts,
-        padding=True,
-        truncation=True,
-        max_length=MAX_SEQ_LEN,
-        return_tensors="pt",
-    )
-    encoded = {k: v.to(device) for k, v in encoded.items()}
-    output = model(**encoded)
-    embeddings = mean_pooling(output, encoded["attention_mask"])
-    embeddings = torch.nn.functional.normalize(embeddings, p=2, dim=1)
-    return embeddings.cpu().tolist()
+        # 原始法律文本目录
+        self.law_text_dir = Path(law_text_dir)
 
+    def mean_pooling(self, model_output, attention_mask):
+        token_embeddings = model_output.last_hidden_state
+        mask_expanded = attention_mask.unsqueeze(-1).expand(token_embeddings.size()).float()
+        return (token_embeddings * mask_expanded).sum(1) / mask_expanded.sum(1).clamp(min=1e-9)
 
-def chunk_text(text: str) -> list:
-    """
-    把长文本切成若干块。
-    Lawformer 支持 4096 tokens，中文约 1 字 ≈ 1.3 token，
-    1500 字约 2000 tokens，留有安全余量。
-    """
-    chunks = []
-    start = 0
-    while start < len(text):
-        end = start + CHUNK_SIZE
-        chunks.append(text[start:end])
-        start += CHUNK_SIZE - CHUNK_OVERLAP
-    return chunks
+    @torch.no_grad()
+    def encode_query(self, text):
+        encoded = self.tokenizer(
+            text,
+            padding=True,
+            truncation=True,
+            max_length=4096,
+            return_tensors="pt"
+        ).to(DEVICE)
+        output = self.model(**encoded)
+        emb = self.mean_pooling(output, encoded["attention_mask"])
+        emb = torch.nn.functional.normalize(emb, p=2, dim=1)
+        return emb.cpu().numpy()[0]
 
-
-def load_law_files(law_dir: str) -> list:
-    """读取 lawtxtversion/ 下所有 .txt 文件。"""
-    law_dir = Path(law_dir)
-    if not law_dir.exists():
-        raise FileNotFoundError(f"找不到法律文本目录：{law_dir.resolve()}")
-
-    files = sorted(law_dir.glob("*.txt"))
-    if not files:
-        raise FileNotFoundError(f"目录 {law_dir} 下没有找到任何 .txt 文件")
-
-    print(f"[2/4] 找到 {len(files)} 个法律文本文件")
-    laws = []
-    for f in files:
-        try:
-            text = f.read_text(encoding="utf-8").strip()
-        except UnicodeDecodeError:
-            text = f.read_text(encoding="gbk").strip()
-        laws.append({
-            "filename": f.name,
-            "name":     f.stem,
-            "text":     text,
-        })
-    return laws
-
-
-def build_database(law_dir: str, db_dir: str):
-    """主流程：读文件 → 切块 → Lawformer 编码 → 存 ChromaDB。"""
-
-    # ── 加载模型
-    tokenizer, model, device = load_model(LAWFORMER_MODEL)
-
-    # ── 读取法律文件
-    laws = load_law_files(law_dir)
-
-    # ── 初始化 ChromaDB
-    print(f"[3/4] 初始化 ChromaDB，存储路径：{Path(db_dir).resolve()}")
-    client = chromadb.PersistentClient(path=db_dir)
-
-    existing = [c.name for c in client.list_collections()]
-    if COLLECTION_NAME in existing:
-        print(f"      检测到已有 collection '{COLLECTION_NAME}'，删除并重建……")
-        client.delete_collection(COLLECTION_NAME)
-
-    collection = client.create_collection(
-        name=COLLECTION_NAME,
-        metadata={"hnsw:space": "cosine"},
-    )
-
-    # ── 向量化并写入
-    print("[4/4] 开始向量化……\n")
-
-    all_ids, all_embeddings, all_documents, all_metadatas = [], [], [], []
-
-    for idx, law in enumerate(laws, 1):
-        chunks = chunk_text(law["text"])
-        print(f"  [{idx:>3}/{len(laws)}] {law['name'][:35]:<35} "
-              f"{len(law['text']):>6} 字  →  {len(chunks)} 块")
-
-        for i, chunk in enumerate(chunks):
-            all_ids.append(f"{law['name']}__chunk_{i}")
-            all_documents.append(chunk)
-            all_metadatas.append({
-                "law_name":     law["name"],
-                "filename":     law["filename"],
-                "chunk_index":  i,
-                "total_chunks": len(chunks),
-            })
-
-        # 逐批编码
-        for b in range(0, len(chunks), BATCH_SIZE):
-            batch = chunks[b: b + BATCH_SIZE]
-            vecs = encode_texts(batch, tokenizer, model, device)
-            all_embeddings.extend(vecs)
-
-    # 分批写入 ChromaDB
-    WRITE_BATCH = 50
-    print(f"\n  写入 ChromaDB，共 {len(all_ids)} 个向量块……")
-    for i in range(0, len(all_ids), WRITE_BATCH):
-        collection.add(
-            ids=all_ids[i: i + WRITE_BATCH],
-            embeddings=all_embeddings[i: i + WRITE_BATCH],
-            documents=all_documents[i: i + WRITE_BATCH],
-            metadatas=all_metadatas[i: i + WRITE_BATCH],
+    def retrieve_top_laws(self, query_text, top_k=5):
+        """返回最相似的 top_k 个法律文件名称及代表性文本片段"""
+        q_emb = self.encode_query(query_text)
+        results = self.collection.query(
+            query_embeddings=[q_emb.tolist()],
+            n_results=top_k * 3  # 多取一些块，用于聚合
         )
 
-    print(f"\n✅ 构建完成！")
-    print(f"   法律文件数  ：{len(laws)}")
-    print(f"   向量块总数  ：{len(all_ids)}")
-    print(f"   数据库位置  ：{Path(db_dir).resolve()}")
-    print(f"\n现在可以运行 law_retriever.py 进行检索。")
+        # 按法律文件聚合相似度得分
+        law_scores = {}
+        law_best_chunk = {}
+        for doc, meta, distance in zip(results["documents"][0],
+                                       results["metadatas"][0],
+                                       results["distances"][0]):
+            law_name = meta["law_name"]
+            similarity = 1 - distance  # cosine distance 转 similarity
+            if law_name not in law_scores:
+                law_scores[law_name] = []
+                law_best_chunk[law_name] = (doc, similarity)
+            law_scores[law_name].append(similarity)
+            # 保留相似度最高的文本块
+            if similarity > law_best_chunk[law_name][1]:
+                law_best_chunk[law_name] = (doc, similarity)
+
+        # 计算每个法律的平均相似度并排序
+        avg_scores = {law: np.mean(scores) for law, scores in law_scores.items()}
+        sorted_laws = sorted(avg_scores.items(), key=lambda x: x[1], reverse=True)[:top_k]
+
+        # 获取原始法律文本（可选，用于打印摘要）
+        law_summaries = {}
+        for law, _ in sorted_laws:
+            law_file = self.law_text_dir / f"{law}.txt"
+            if law_file.exists():
+                text = law_file.read_text(encoding="utf-8")[:500] + "..."
+                law_summaries[law] = text
+            else:
+                law_summaries[law] = "（原始文本文件未找到）"
+
+        return sorted_laws, law_best_chunk, law_summaries
+
+
+# =============================
+# 2. 实体检索与 KG 推理组件（沿用原逻辑）
+# =============================
+class EntityRetriever:
+    def __init__(self, db_path, collection_name, model_name):
+        self.model = SentenceTransformer(model_name)
+        self.client = chromadb.PersistentClient(path=db_path)
+        self.collection = self.client.get_collection(name=collection_name)
+
+    def encode(self, text):
+        return self.model.encode(text, convert_to_numpy=True)
+
+    def search_entities(self, text, k=5):
+        emb = self.encode(text)
+        res = self.collection.query(
+            query_embeddings=[emb.tolist()],
+            n_results=k
+        )
+        return res["documents"][0]  # 返回实体名称列表
+
+
+class KG:
+    def __init__(self, name):
+        self.name = name
+        self.triplets = []
+        self.entity2id = {}
+        self.id2entity = {}
+        self.rel2id = {}
+        self.id2rel = {}
+
+    def load_from_file(self, path):
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        self.name = data["name"]
+        self.triplets = data["triplets"]
+        self.entity2id = data["entity2id"]
+        self.rel2id = data["rel2id"]
+        self.id2entity = {int(v): k for k, v in self.entity2id.items()}
+        self.id2rel = {int(v): k for k, v in self.rel2id.items()}
+
+    def indexed(self):
+        return [(self.entity2id[h], self.rel2id[r], self.entity2id[t])
+                for h, r, t in self.triplets]
+
+
+class CompGCNLayer(torch.nn.Module):
+    def __init__(self, dim):
+        super().__init__()
+        self.W_self = torch.nn.Linear(dim, dim)
+        self.W_nei = torch.nn.Linear(dim, dim)
+        self.W_rel = torch.nn.Linear(dim, dim)
+        self.act = torch.nn.ReLU()
+
+    def forward(self, ent, rel, edge_index, edge_type):
+        src, dst = edge_index
+        r_emb = rel[edge_type]
+        msg = ent[src] * torch.sigmoid(r_emb)
+        agg = torch.zeros_like(ent)
+        agg.index_add_(0, dst, msg)
+        out = self.W_self(ent) + self.W_nei(agg)
+        out = self.act(out)
+        rel = self.W_rel(rel)
+        return out, rel
+
+
+class CompGCN(torch.nn.Module):
+    def __init__(self, num_ent, num_rel, init_emb):
+        super().__init__()
+        self.ent = torch.nn.Embedding.from_pretrained(init_emb, freeze=False)
+        self.rel = torch.nn.Embedding(num_rel, EMB_DIM)
+        self.layers = torch.nn.ModuleList([
+            CompGCNLayer(EMB_DIM),
+            CompGCNLayer(EMB_DIM)
+        ])
+
+    def encode(self, edge_index, edge_type):
+        x = self.ent.weight
+        r = self.rel.weight
+        for layer in self.layers:
+            x, r = layer(x, r, edge_index, edge_type)
+        return x, r
+
+    def score(self, h, r, t):
+        return (h * r * t).sum(-1)
+
+
+def build_graph(kg):
+    src, dst, rel = [], [], []
+    for h, r, t in kg.indexed():
+        src += [h, t]
+        dst += [t, h]
+        rel += [r, r]
+    return (
+        torch.tensor([src, dst], device=DEVICE),
+        torch.tensor(rel, device=DEVICE)
+    )
+
+
+def get_subgraph(kg, seeds, hops=2):
+    nodes = set(seeds)
+    edges = []
+    for _ in range(hops):
+        for h, r, t in kg.triplets:
+            if h in nodes or t in nodes:
+                edges.append((h, r, t))
+                nodes.add(h)
+                nodes.add(t)
+    return edges
+
+
+def find_paths(edges, start, depth=3):
+    paths = []
+
+    def dfs(cur, nodes, rels, d):
+        if d >= depth:
+            return
+        for h, r, t in edges:
+            if h == cur:
+                paths.append((nodes + [t], rels + [r]))
+                dfs(t, nodes + [t], rels + [r], d + 1)
+
+    for s in start:
+        dfs(s, [s], [], 0)
+    return paths
+
+
+def score_paths(paths, model, kg, edge_index, edge_type):
+    with torch.no_grad():
+        ent, rel = model.encode(edge_index, edge_type)
+
+    scored = []
+    for nodes, rels in paths:
+        score = 0
+        valid = True
+        for i in range(len(rels)):
+            h = kg.entity2id.get(nodes[i])
+            t = kg.entity2id.get(nodes[i + 1])
+            r = kg.rel2id.get(rels[i])
+            if h is None or t is None or r is None:
+                valid = False
+                break
+            score += model.score(
+                ent[h].unsqueeze(0),
+                rel[r].unsqueeze(0),
+                ent[t].unsqueeze(0)
+            ).item()
+        if valid:
+            scored.append((score, nodes, rels))
+    return sorted(scored, reverse=True)[:5]
+
+
+def build_reasoning(case, scored):
+    out = f"\n案情：{case}\n\n推理链：\n"
+    for s, nodes, rels in scored:
+        chain = ""
+        for i in range(len(rels)):
+            chain += f"{nodes[i]} --[{rels[i]}]--> "
+        chain += nodes[-1]
+        out += f"{chain} (score={s:.2f})\n"
+    return out
+
+
+def load_model_and_kg(law_name):
+    model_path = os.path.join(MODEL_DIR, f"{law_name}_compgcn.pt")
+    kg_path = os.path.join(KG_DIR, f"{law_name}_kg.json")
+
+    if not os.path.exists(model_path):
+        raise FileNotFoundError(f"模型文件不存在: {model_path}")
+    if not os.path.exists(kg_path):
+        raise FileNotFoundError(f"KG文件不存在: {kg_path}")
+
+    kg = KG(law_name)
+    kg.load_from_file(kg_path)
+
+    checkpoint = torch.load(model_path, map_location=DEVICE)
+    init_emb = torch.zeros((len(kg.entity2id), EMB_DIM), dtype=torch.float32)
+    model = CompGCN(len(kg.entity2id), len(kg.rel2id), init_emb).to(DEVICE)
+    model.load_state_dict(checkpoint["model_state_dict"])
+
+    return model, kg
+
+
+# =============================
+# 主流程
+# =============================
+def main(case_text, top_k_laws=3):
+    print("\n" + "="*70)
+    print("🔍 第一阶段：法律文本匹配（Lawformer）")
+    print("="*70)
+
+    # 初始化法律检索器
+    law_retriever = LawRetriever(
+        db_path=LAW_DB_PATH,
+        collection_name=LAW_COLLECTION,
+        model_name=LAWFORMER_MODEL,
+        law_text_dir=LAW_TEXT_DIR
+    )
+
+    # 检索最相似的法律文件
+    top_laws, best_chunks, summaries = law_retriever.retrieve_top_laws(case_text, top_k=top_k_laws)
+
+    print(f"\n案情描述：{case_text[:100]}...")
+    print(f"\n检索到 {len(top_laws)} 个最相似法律文件：")
+    for rank, (law, avg_sim) in enumerate(top_laws, 1):
+        print(f"\n  【{rank}】{law}  (平均相似度: {avg_sim:.4f})")
+        print(f"       代表性片段：{best_chunks[law][0][:200]}...")
+        # 可选：打印原始法律文本开头
+        # print(f"       法律文本开头：{summaries[law][:150]}...")
+
+    print("\n" + "="*70)
+    print("🧠 第二阶段：知识图谱推理（CompGCN）")
+    print("="*70)
+
+    # 初始化实体检索器
+    entity_retriever = EntityRetriever(
+        db_path=ENTITY_DB_PATH,
+        collection_name=ENTITY_COLLECTION,
+        model_name=TEXT2VEC_MODEL
+    )
+
+    # 对每个匹配到的法律文件进行推理
+    for rank, (law_name, _) in enumerate(top_laws, 1):
+        print(f"\n📚 正在处理法律文件 [{rank}/{len(top_laws)}]：{law_name}")
+
+        try:
+            model, kg = load_model_and_kg(law_name)
+        except FileNotFoundError as e:
+            logger.warning(f"跳过 {law_name}：{e}")
+            continue
+
+        edge_index, edge_type = build_graph(kg)
+
+        # 检索种子实体（基于 text2vec 模型）
+        seeds = entity_retriever.search_entities(case_text, k=5)
+        logger.info(f"种子实体：{seeds}")
+
+        subgraph = get_subgraph(kg, seeds, hops=2)
+        paths = find_paths(subgraph, seeds, depth=3)
+        scored_paths = score_paths(paths, model, kg, edge_index, edge_type)
+
+        print(build_reasoning(case_text, scored_paths))
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="构建法律文本 ChromaDB 向量数据库（Lawformer）")
-    parser.add_argument("--law_dir", default=DEFAULT_LAW_DIR, help="法律 txt 文件夹路径")
-    parser.add_argument("--db_dir",  default=DEFAULT_DB_DIR,  help="ChromaDB 持久化路径")
-    args = parser.parse_args()
-
-    build_database(args.law_dir, args.db_dir)
+    # 示例案情
+    case = "2019年11月15日21时许，被告人金德林与徐加泉各持猎枪相约打猎，被告人金德林将徐某2误认为猎物开枪致其死亡。"
+    # case = "行为人多次骗取他人财物"
+    main(case, top_k_laws=3)
