@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legal Intelligence Analysis</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0d1f35;--navy2:#152d4a;--navy3:#1e3f66;
+  --gold:#c8a228;--gold2:#e2b93b;--gold-pale:#fdf5dc;--gold-t:rgba(200,162,40,0.12);
+  --paper:#f9f6f0;--paper2:#f1ece0;--ink:#1c1a16;
+  --muted:#706a5e;--muted2:#9a9080;
+  --border:rgba(28,26,22,0.11);--border2:rgba(28,26,22,0.18);
+  --ok:#256c4e;--ok-bg:rgba(37,108,78,0.10);
+  --warn-bg:rgba(200,162,40,0.14);--info-bg:rgba(21,45,74,0.08);
+  --red:#7a1a1a;--red-bg:rgba(122,26,26,0.09);
+  --r:6px;--rl:10px;
+  --sh:0 1px 3px rgba(0,0,0,0.07),0 4px 14px rgba(0,0,0,0.05);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--paper2);color:var(--ink);min-height:100vh;font-size:14px;line-height:1.7}
+
+/* Header */
+.hdr{background:var(--navy);border-bottom:2px solid var(--gold);height:56px;padding:0 28px;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:200}
+.hdr-seal{width:32px;height:32px;border-radius:50%;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:'EB Garamond',serif;font-size:18px;color:var(--gold2)}
+.hdr h1{font-family:'EB Garamond',serif;font-size:19px;font-weight:500;color:#e9e0cc;letter-spacing:0.02em}
+.hdr-sub{margin-left:auto;font-size:11px;color:rgba(233,224,204,0.42);letter-spacing:0.07em}
+
+/* Layout */
+.wrap{display:grid;grid-template-columns:216px 1fr;min-height:calc(100vh - 56px)}
+
+/* Sidebar */
+.side{background:#f3ede2;border-right:1px solid var(--border);padding:20px 0 40px;position:sticky;top:56px;height:calc(100vh - 56px);overflow-y:auto}
+.side-lbl{font-size:10px;letter-spacing:0.14em;color:var(--muted2);text-transform:uppercase;padding:0 18px 14px}
+.nav-steps{display:flex;flex-direction:column}
+.nav-step{display:flex;align-items:flex-start;gap:10px;padding:9px 18px;border-left:3px solid transparent;transition:background 0.2s}
+.nav-step.is-active{background:rgba(200,162,40,0.11);border-left-color:var(--gold)}
+.nav-step.is-done{opacity:0.6}
+.nav-col{display:flex;flex-direction:column;align-items:center}
+.nav-dot{width:24px;height:24px;border-radius:50%;border:1.5px solid var(--border2);background:var(--paper2);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;color:var(--muted);flex-shrink:0;transition:all 0.3s}
+.nav-dot.run{background:var(--navy2);border-color:var(--navy3);color:#fff;animation:pdot 1.2s ease-in-out infinite}
+.nav-dot.done{background:var(--ok);border-color:var(--ok);color:#fff}
+.nav-dot.err{background:var(--red);border-color:var(--red);color:#fff}
+.nav-line{width:1px;height:18px;background:var(--border);margin-top:3px}
+.nav-info{flex:1;padding-top:2px}
+.nav-name{font-size:12px;font-weight:500;color:var(--ink);line-height:1.4}
+.nav-desc{font-size:10px;color:var(--muted2)}
+.nav-tag{display:inline-block;font-size:10px;font-weight:500;padding:2px 7px;border-radius:3px;margin-top:4px}
+.t-wait{background:var(--paper2);color:var(--muted2)}
+.t-run{background:var(--warn-bg);color:#7c5800}
+.t-done{background:var(--ok-bg);color:var(--ok)}
+.t-err{background:var(--red-bg);color:var(--red)}
+@keyframes pdot{0%,100%{box-shadow:0 0 0 0 rgba(21,45,74,0.45)}50%{box-shadow:0 0 0 5px rgba(21,45,74,0)}}
+
+/* Main */
+.main{padding:24px 28px 52px;display:flex;flex-direction:column;gap:20px;max-width:980px}
+
+/* Card */
+.card{background:var(--paper);border:1px solid var(--border);border-radius:var(--rl);box-shadow:var(--sh);overflow:hidden;transition:opacity 0.3s}
+.card.dim{opacity:0.36;pointer-events:none}
+.card-hd{padding:13px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px}
+.c-icon{width:28px;height:28px;border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0}
+.ci-n{background:var(--info-bg);color:var(--navy2)}
+.ci-g{background:var(--gold-t);color:#7c5800}
+.ci-s{background:var(--ok-bg);color:var(--ok)}
+.card-ttl{font-family:'EB Garamond',serif;font-size:15px;font-weight:500;color:var(--ink)}
+.card-sub{margin-left:auto;font-size:11px;color:var(--muted2)}
+.card-bd{padding:18px}
+
+/* Input */
+.case-ta{width:100%;min-height:90px;resize:vertical;border:1px solid var(--border2);border-radius:var(--r);padding:11px 13px;outline:none;font-family:'Noto Sans SC','Inter',sans-serif;font-size:14px;line-height:1.75;color:var(--ink);background:#fff;transition:border-color 0.2s}
+.case-ta:focus{border-color:var(--gold)}
+.row{display:flex;align-items:center;gap:10px;margin-top:11px;flex-wrap:wrap}
+.api-in{flex:1;min-width:160px;max-width:240px;height:34px;border:1px solid var(--border2);border-radius:var(--r);padding:0 11px;font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--ink);background:#fff;outline:none}
+.api-in:focus{border-color:var(--gold)}
+.api-lbl{font-size:11px;color:var(--muted2);white-space:nowrap}
+.btn{height:36px;padding:0 20px;border:none;border-radius:var(--r);font-family:'Inter',sans-serif;font-size:13px;font-weight:500;cursor:pointer;display:flex;align-items:center;gap:7px;transition:background 0.2s,transform 0.1s;white-space:nowrap}
+.btn-p{background:var(--navy);color:#e9e0cc}
+.btn-p:hover{background:var(--navy3)}
+.btn-p:active{transform:scale(0.97)}
+.btn-p:disabled{opacity:0.4;cursor:not-allowed;transform:none}
+.btn-s{background:transparent;color:var(--muted);border:1px solid var(--border2);font-size:12px;height:30px;padding:0 12px}
+.btn-s:hover{background:var(--info-bg);color:var(--navy2)}
+
+/* Skeleton */
+.skel{background:linear-gradient(90deg,var(--paper2) 25%,#e5dfd1 50%,var(--paper2) 75%);background-size:200% 100%;animation:sk 1.4s infinite;border-radius:4px;height:13px;margin-bottom:9px}
+@keyframes sk{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.w80{width:80%}.w65{width:65%}.w90{width:90%}
+
+/* Error */
+.err-box{background:var(--red-bg);border:1px solid rgba(122,26,26,0.2);border-radius:var(--r);padding:11px 15px;color:var(--red);font-size:13px}
+
+/* Law cards */
+.laws-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.law-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:13px 15px;display:flex;flex-direction:column;gap:7px;transition:border-color 0.2s}
+.law-card:hover{border-color:rgba(200,162,40,0.45)}
+.lc-top{display:flex;align-items:center;justify-content:space-between}
+.rk{font-size:11px;font-weight:500;padding:2px 8px;border-radius:3px;background:var(--gold-t);color:#7c5800}
+.sv{font-size:11px;font-family:'JetBrains Mono',monospace;color:var(--muted2)}
+.law-name{font-family:'Noto Sans SC',sans-serif;font-size:13px;font-weight:500;color:var(--ink);line-height:1.5}
+.sim-track{height:4px;background:var(--border);border-radius:2px}
+.sim-fill{height:100%;border-radius:2px;background:linear-gradient(90deg,var(--navy2),var(--gold));transition:width 0.8s ease}
+.law-ex{font-size:11.5px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;font-family:'Noto Sans SC',sans-serif}
+.chips{display:flex;gap:5px;flex-wrap:wrap;margin-top:2px}
+.chip{font-size:10px;font-weight:500;padding:2px 7px;border-radius:3px}
+.chip-b{background:var(--info-bg);color:var(--navy2)}
+.chip-g{background:var(--gold-t);color:#7c5800}
+
+/* KG layout */
+.kg-wrap{display:grid;grid-template-columns:1fr 340px;gap:14px}
+@media(max-width:760px){.kg-wrap{grid-template-columns:1fr}}
+
+/* D3 graph */
+.kg-graph-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;position:relative}
+.kg-graph-card svg{display:block;width:100%;height:420px}
+.kg-legend{position:absolute;bottom:10px;left:10px;display:flex;flex-direction:column;gap:5px;pointer-events:none;background:rgba(249,246,240,0.88);border-radius:5px;padding:7px 10px}
+.legend-row{display:flex;align-items:center;gap:6px;font-size:10px;color:var(--muted);font-family:'Inter',sans-serif}
+.ld{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+
+/* Triple list */
+.triples-list{display:flex;flex-direction:column;gap:5px;max-height:420px;overflow-y:auto;padding-right:2px}
+.tr-row{display:flex;align-items:center;gap:5px;padding:7px 10px;border:1px solid var(--border);border-radius:var(--r);background:#fff;font-size:11.5px;transition:border-color 0.15s;font-family:'Noto Sans SC',sans-serif}
+.tr-row.top{border-color:rgba(200,162,40,0.5);background:rgba(200,162,40,0.035)}
+.th{font-weight:500;color:var(--navy2);flex-shrink:0;max-width:76px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ta{color:var(--muted2);flex-shrink:0;font-size:12px}
+.trel{font-size:10px;background:var(--info-bg);color:var(--navy2);padding:2px 7px;border-radius:3px;flex-shrink:0;max-width:96px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tt{flex:1;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tsc{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted2);flex-shrink:0}
+.law-tabs{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:11px}
+.l-tab{font-size:11px;padding:3px 11px;border:1px solid var(--border2);border-radius:20px;background:transparent;color:var(--muted);cursor:pointer;font-family:'Inter',sans-serif;transition:all 0.15s}
+.l-tab.on{background:var(--navy);color:#e9e0cc;border-color:var(--navy)}
+.l-tab:hover:not(.on){background:var(--info-bg);color:var(--navy2)}
+.sec-lbl{font-size:10px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted2);margin-bottom:9px}
+
+/* Reasoning flow */
+.rf-flow{display:flex;flex-direction:column;align-items:stretch}
+.rf-step{display:flex;gap:14px;padding:14px 16px;border:1px solid var(--border);border-radius:var(--r);background:#fff;animation:fu 0.35s ease forwards;opacity:0}
+@keyframes fu{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+.rf-num{width:26px;height:26px;border-radius:50%;flex-shrink:0;background:var(--navy);color:#e9e0cc;font-size:12px;font-weight:500;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.rf-inner{flex:1}
+.rf-lbl{font-family:'EB Garamond',serif;font-size:14px;font-weight:500;color:var(--navy2);margin-bottom:5px}
+.rf-txt{font-size:13px;color:var(--ink);line-height:1.85;white-space:pre-wrap;font-family:'Noto Sans SC','Inter',sans-serif}
+
+/* Arrow connector between steps */
+.rf-connector{display:flex;flex-direction:column;align-items:center;padding:5px 0;gap:0}
+.rf-line{width:2px;height:20px;background:linear-gradient(to bottom,var(--gold),rgba(200,162,40,0.4));border-radius:1px}
+.rf-arrowhead{width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-top:10px solid var(--gold);opacity:0.75}
+
+/* Streaming raw */
+.stream-raw{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:15px 17px;font-size:13px;line-height:1.85;color:var(--ink);white-space:pre-wrap;min-height:80px;font-family:'Noto Sans SC','Inter',sans-serif}
+.cursor{display:inline-block;width:2px;height:13px;background:var(--gold);animation:blink 0.9s step-end infinite;vertical-align:text-bottom;margin-left:1px}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+
+/* Analysis sections */
+.a-sections{display:flex;flex-direction:column;gap:11px}
+.a-sec{border:1px solid var(--border);border-radius:var(--r);background:#fff;overflow:hidden}
+.a-sec-hd{padding:9px 15px;background:var(--info-bg);border-bottom:1px solid var(--border);font-family:'EB Garamond',serif;font-size:14px;font-weight:500;color:var(--navy2);display:flex;align-items:center;gap:7px}
+.a-sec-bd{padding:13px 15px;font-size:13px;line-height:1.85;color:var(--ink);white-space:pre-wrap;font-family:'Noto Sans SC','Inter',sans-serif}
+
+/* Spinner */
+.spin{width:14px;height:14px;border:2px solid rgba(233,224,204,0.3);border-top-color:#e9e0cc;border-radius:50%;animation:sp 0.7s linear infinite;flex-shrink:0}
+@keyframes sp{to{transform:rotate(360deg)}}
+
+/* Tooltip */
+.tip{position:fixed;pointer-events:none;opacity:0;background:var(--navy);color:#e9e0cc;font-size:11px;padding:5px 10px;border-radius:5px;transition:opacity 0.15s;z-index:999;max-width:220px;line-height:1.5;font-family:'Inter',sans-serif}
+
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-thumb{background:rgba(28,26,22,0.14);border-radius:3px}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="hdr-seal">⚖</div>
+  <h1>Legal Intelligence Analysis</h1>
+  <span class="hdr-sub">Lawformer · CompGCN · DeepSeek-V3</span>
+</header>
+
+<div class="wrap">
+
+  <aside class="side">
+    <div class="side-lbl">Pipeline</div>
+    <div class="nav-steps">
+
+      <div class="nav-step" id="nav0">
+        <div class="nav-col"><div class="nav-dot" id="dot0">1</div><div class="nav-line"></div></div>
+        <div class="nav-info">
+          <div class="nav-name">Case Input</div>
+          <div class="nav-desc">Enter case description</div>
+          <div class="nav-tag t-wait" id="tag0">Ready</div>
+        </div>
+      </div>
+
+      <div class="nav-step" id="nav1">
+        <div class="nav-col"><div class="nav-dot" id="dot1">2</div><div class="nav-line"></div></div>
+        <div class="nav-info">
+          <div class="nav-name">Law Retrieval</div>
+          <div class="nav-desc">Lawformer + ChromaDB</div>
+          <div class="nav-tag t-wait" id="tag1">Waiting</div>
+        </div>
+      </div>
+
+      <div class="nav-step" id="nav2">
+        <div class="nav-col"><div class="nav-dot" id="dot2">3</div><div class="nav-line"></div></div>
+        <div class="nav-info">
+          <div class="nav-name">Knowledge Graph</div>
+          <div class="nav-desc">CompGCN triple scoring</div>
+          <div class="nav-tag t-wait" id="tag2">Waiting</div>
+        </div>
+      </div>
+
+      <div class="nav-step" id="nav3">
+        <div class="nav-col"><div class="nav-dot" id="dot3">4</div><div class="nav-line"></div></div>
+        <div class="nav-info">
+          <div class="nav-name">Reasoning Path</div>
+          <div class="nav-desc">DeepSeek-V3 generated</div>
+          <div class="nav-tag t-wait" id="tag3">Waiting</div>
+        </div>
+      </div>
+
+      <div class="nav-step" id="nav4">
+        <div class="nav-col"><div class="nav-dot" id="dot4">5</div></div>
+        <div class="nav-info">
+          <div class="nav-name">Legal Analysis</div>
+          <div class="nav-desc">Final verdict &amp; advice</div>
+          <div class="nav-tag t-wait" id="tag4">Waiting</div>
+        </div>
+      </div>
+
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <!-- Input -->
+    <div class="card" id="cardInput">
+      <div class="card-hd">
+        <div class="c-icon ci-n">📝</div>
+        <span class="card-ttl">Case Description</span>
+        <span class="card-sub">Step 1</span>
+      </div>
+      <div class="card-bd">
+        <textarea class="case-ta" id="caseInput">2019年11月15日21时许，被告人金德林与徐加泉各持猎枪相约打猎，被告人金德林将徐某2误认为猎物开枪致其死亡。</textarea>
+        <div class="row">
+          <span class="api-lbl">Backend URL</span>
+          <input class="api-in" id="apiBase" value="http://localhost:8000">
+          <div style="flex:1"></div>
+          <button class="btn btn-s" id="btnSample">Sample Case</button>
+          <button class="btn btn-p" id="btnRun" onclick="runPipeline()"><span>Run Analysis</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Law Retrieval -->
+    <div class="card dim" id="cardLaws">
+      <div class="card-hd">
+        <div class="c-icon ci-g">🔍</div>
+        <span class="card-ttl">Law Retrieval Results</span>
+        <span class="card-sub" id="lawsMeta">Semantic search via Lawformer</span>
+      </div>
+      <div class="card-bd" id="lawsBody"><div class="skel w80"></div><div class="skel w65"></div><div class="skel w90"></div></div>
+    </div>
+
+    <!-- Knowledge Graph -->
+    <div class="card dim" id="cardKG">
+      <div class="card-hd">
+        <div class="c-icon ci-n">🕸</div>
+        <span class="card-ttl">Knowledge Graph</span>
+        <span class="card-sub" id="kgMeta">CompGCN entity-relation triples</span>
+      </div>
+      <div class="card-bd" id="kgBody"><div class="skel w80"></div><div class="skel w65"></div><div class="skel w90"></div></div>
+    </div>
+
+    <!-- Reasoning Path -->
+    <div class="card dim" id="cardReasoning">
+      <div class="card-hd">
+        <div class="c-icon ci-g">🧠</div>
+        <span class="card-ttl">Legal Reasoning Path</span>
+        <span class="card-sub">DeepSeek-V3 generated</span>
+      </div>
+      <div class="card-bd" id="reasoningBody"><div class="skel w80"></div><div class="skel w65"></div><div class="skel w90"></div></div>
+    </div>
+
+    <!-- Analysis -->
+    <div class="card dim" id="cardAnalysis">
+      <div class="card-hd">
+        <div class="c-icon ci-s">⚖️</div>
+        <span class="card-ttl">Legal Analysis &amp; Verdict</span>
+        <span class="card-sub">DeepSeek-V3 generated</span>
+      </div>
+      <div class="card-bd" id="analysisBody"><div class="skel w80"></div><div class="skel w65"></div><div class="skel w90"></div></div>
+    </div>
+
+  </main>
+</div>
+
+<div class="tip" id="tip"></div>
+
+<script>
+const S={laws:[],triples:[],reasoning:'',running:false};
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const api=()=>$('apiBase').value.replace(/\/$/,'');
+
+/* ── Sidebar step state ── */
+function setStep(i,st){
+  const lbl={wait:'Waiting',run:'Processing…',done:'Done',err:'Failed'};
+  const nav=$(`nav${i}`),dot=$(`dot${i}`),tag=$(`tag${i}`);
+  dot.className='nav-dot'; tag.className='nav-tag'; nav.className='nav-step';
+  if(st==='run'){dot.classList.add('run');dot.textContent='…';tag.classList.add('t-run')}
+  else if(st==='done'){dot.classList.add('done');dot.textContent='✓';tag.classList.add('t-done');nav.classList.add('is-done')}
+  else if(st==='err'){dot.classList.add('err');dot.textContent='✕';tag.classList.add('t-err')}
+  else{dot.textContent=i+1;tag.classList.add('t-wait')}
+  tag.textContent=lbl[st]||st;
+  if(st==='run') nav.classList.add('is-active');
+}
+const dim=(id,v=true)=>$(id).classList.toggle('dim',v);
+const skel=()=>`<div class="skel w80"></div><div class="skel w65"></div><div class="skel w90"></div>`;
+const showErr=(bid,m)=>$(bid).innerHTML=`<div class="err-box">⚠ ${esc(m)}</div>`;
+
+/* ── Step 2: Law Retrieval ── */
+async function runSearch(query){
+  setStep(1,'run'); dim('cardLaws',false); $('lawsBody').innerHTML=skel();
+  const r=await fetch(`${api()}/api/search`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query})});
+  if(!r.ok) throw new Error(`Retrieval ${r.status}: ${await r.text()}`);
+  const d=await r.json();
+  if(!d.success) throw new Error(d.detail||'Search failed');
+  S.laws=d.laws; setStep(1,'done');
+  $('lawsMeta').textContent=`${d.laws.length} laws matched`;
+  $('lawsBody').innerHTML=`<div class="laws-grid">${d.laws.map((l,i)=>`
+    <div class="law-card">
+      <div class="lc-top"><span class="rk">#${i+1}</span><span class="sv">${(l.similarity*100).toFixed(1)}%</span></div>
+      <div class="law-name">${esc(l.law_name)}</div>
+      <div class="sim-track"><div class="sim-fill" style="width:${Math.round(l.similarity*100)}%"></div></div>
+      <div class="law-ex">${esc(l.matched_text)}</div>
+      <div class="chips"><span class="chip chip-b">Chunk ${l.chunk_index+1}/${l.total_chunks}</span><span class="chip chip-g">sim ${l.similarity}</span></div>
+    </div>`).join('')}</div>`;
+  return d.laws;
+}
+
+/* ── Step 3: Knowledge Graph ── */
+async function runTriples(laws){
+  setStep(2,'run'); dim('cardKG',false); $('kgBody').innerHTML=skel();
+  const all=[];
+  for(const l of laws){
+    try{
+      const r=await fetch(`${api()}/api/triples`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({law_name:l.law_name,top_n:40})});
+      if(!r.ok) continue;
+      const d=await r.json();
+      if(d.success) d.triples.forEach(t=>{t._law=l.law_name;all.push(t)});
+    }catch{}
+  }
+  if(!all.length) throw new Error('No KG files found — check models/ and kg_store/ directories.');
+  all.sort((a,b)=>b.score-a.score);
+  S.triples=all.slice(0,60);
+  setStep(2,'done');
+  $('kgMeta').textContent=`${S.triples.length} triples`;
+
+  const lawNames=[...new Set(S.triples.map(t=>t._law))];
+  const tabs=lawNames.map((n,i)=>`<button class="l-tab${i===0?' on':''}" onclick="switchTab(this,'${esc(n)}')">${esc(n)}</button>`).join('')
+    +`<button class="l-tab" onclick="switchTab(this,'ALL')">All</button>`;
+
+  $('kgBody').innerHTML=`
+    <div class="law-tabs" id="kgTabs">${tabs}</div>
+    <div class="kg-wrap">
+      <div>
+        <div class="sec-lbl">Force-directed graph — drag nodes to explore</div>
+        <div class="kg-graph-card" id="kgCard">
+          <svg id="kgSvg"></svg>
+          <div class="kg-legend">
+            <div class="legend-row"><div class="ld" style="background:#256c4e"></div>Hub (high degree)</div>
+            <div class="legend-row"><div class="ld" style="background:#1e3f66"></div>Head entity</div>
+            <div class="legend-row"><div class="ld" style="background:#c8a228"></div>Tail entity</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="sec-lbl">Triples ranked by CompGCN score</div>
+        <div class="triples-list" id="triplesList">${S.triples.slice(0,40).map((t,i)=>`
+          <div class="tr-row${i<3?' top':''}" data-law="${esc(t._law)}">
+            <span class="th" title="${esc(t.head)}">${esc(t.head)}</span>
+            <span class="ta">→</span>
+            <span class="trel" title="${esc(t.relation)}">${esc(t.relation)}</span>
+            <span class="ta">→</span>
+            <span class="tt" title="${esc(t.tail)}">${esc(t.tail)}</span>
+            <span class="tsc">${t.score.toFixed(3)}</span>
+          </div>`).join('')}
+        </div>
+      </div>
+    </div>`;
+
+  drawD3(S.triples.slice(0,32));
+  return S.triples;
+}
+
+function switchTab(el,law){
+  document.querySelectorAll('.l-tab').forEach(b=>b.classList.remove('on'));
+  el.classList.add('on');
+  document.querySelectorAll('.tr-row').forEach(r=>{
+    r.style.display=(law==='ALL'||r.dataset.law===law)?'flex':'none';
+  });
+}
+
+/* ── D3 Force Graph ── */
+function drawD3(triples){
+  const card=$('kgCard');
+  const W=card.clientWidth||360, H=420;
+  const svg=d3.select('#kgSvg').attr('viewBox',`0 0 ${W} ${H}`);
+  svg.selectAll('*').remove();
+
+  const nodeMap={};
+  const links=[];
+  triples.forEach(t=>{
+    if(!nodeMap[t.head]) nodeMap[t.head]={id:t.head,in:0,out:0};
+    if(!nodeMap[t.tail]) nodeMap[t.tail]={id:t.tail,in:0,out:0};
+    nodeMap[t.head].out++;
+    nodeMap[t.tail].in++;
+    links.push({source:t.head,target:t.tail,rel:t.relation,score:t.score});
+  });
+  const nodes=Object.values(nodeMap);
+  nodes.forEach(n=>{ n.deg=n.in+n.out; });
+  const maxDeg=d3.max(nodes,n=>n.deg)||1;
+  const maxScore=d3.max(links,l=>l.score)||1;
+
+  /* node radius */
+  const nr=n=>8+Math.sqrt(n.deg/maxDeg)*14;
+  /* node colour */
+  const nc=n=>{
+    if(n.deg>=3) return '#256c4e';
+    if(n.out>0 && n.in===0) return '#1e3f66';
+    return '#c8a228';
+  };
+  /* edge opacity/width by score */
+  const ew=l=>0.8+(l.score/maxScore)*2.4;
+  const eo=l=>0.25+(l.score/maxScore)*0.65;
+
+  /* arrow markers — 3 bands */
+  const defs=svg.append('defs');
+  [['a-lo','rgba(112,106,94,0.55)'],['a-mid','rgba(30,63,102,0.7)'],['a-hi','#c8a228']].forEach(([id,col])=>{
+    defs.append('marker').attr('id',id)
+      .attr('viewBox','0 -4 9 8').attr('refX',9).attr('refY',0)
+      .attr('markerWidth',5).attr('markerHeight',5).attr('orient','auto')
+      .append('path').attr('d','M0,-4L9,0L0,4').attr('fill',col);
+  });
+  const markerFor=l=>{const r=l.score/maxScore; return r>0.68?'a-hi':r>0.34?'a-mid':'a-lo';};
+
+  /* simulation */
+  const sim=d3.forceSimulation(nodes)
+    .force('link',d3.forceLink(links).id(d=>d.id).distance(d=>70+(1-d.score/maxScore)*40).strength(0.6))
+    .force('charge',d3.forceManyBody().strength(-260))
+    .force('center',d3.forceCenter(W/2,H/2))
+    .force('collide',d3.forceCollide().radius(d=>nr(d)+14));
+
+  /* edge glow layer for top-scoring edges */
+  const glowG=svg.append('g');
+  const glow=glowG.selectAll('line').data(links.filter(l=>l.score/maxScore>0.65)).join('line')
+    .attr('stroke','rgba(200,162,40,0.18)').attr('stroke-width',8).attr('stroke-linecap','round');
+
+  /* edges */
+  const linkG=svg.append('g');
+  const link=linkG.selectAll('line').data(links).join('line')
+    .attr('stroke',l=>l.score/maxScore>0.65?'rgba(200,162,40,0.7)':l.score/maxScore>0.33?'rgba(30,63,102,0.55)':'rgba(112,106,94,0.38)')
+    .attr('stroke-width',l=>ew(l))
+    .attr('stroke-opacity',l=>eo(l))
+    .attr('marker-end',l=>`url(#${markerFor(l)})`);
+
+  /* edge labels */
+  const elblG=svg.append('g');
+  const elbl=elblG.selectAll('text').data(links).join('text')
+    .text(l=>{ const s=l.rel; return s.length>7?s.slice(0,7)+'…':s; })
+    .attr('font-size',9).attr('fill','#706a5e').attr('text-anchor','middle')
+    .style('pointer-events','none').style('font-family','Noto Sans SC,Inter,sans-serif');
+
+  /* nodes */
+  const nodeG=svg.append('g');
+  const nodeEl=nodeG.selectAll('g').data(nodes).join('g').attr('cursor','grab')
+    .call(d3.drag()
+      .on('start',(ev,d)=>{ if(!ev.active) sim.alphaTarget(0.3).restart(); d.fx=d.x;d.fy=d.y; })
+      .on('drag',(ev,d)=>{ d.fx=ev.x;d.fy=ev.y; })
+      .on('end',(ev,d)=>{ if(!ev.active) sim.alphaTarget(0); d.fx=null;d.fy=null; }));
+
+  /* glow ring for hub nodes */
+  nodeEl.filter(d=>d.deg>=3).append('circle')
+    .attr('r',d=>nr(d)+6).attr('fill','none')
+    .attr('stroke','rgba(37,108,78,0.22)').attr('stroke-width',4);
+
+  /* score-ring outer border for top nodes */
+  nodeEl.filter(d=>d.deg>=2).append('circle')
+    .attr('r',d=>nr(d)+2).attr('fill','none')
+    .attr('stroke',d=>nc(d)).attr('stroke-width',1.5).attr('stroke-opacity',0.4)
+    .attr('stroke-dasharray','3 2');
+
+  /* main circle */
+  nodeEl.append('circle').attr('r',d=>nr(d))
+    .attr('fill',d=>nc(d)).attr('stroke','#f9f6f0').attr('stroke-width',2).attr('opacity',0.94);
+
+  /* label */
+  nodeEl.append('text')
+    .text(d=>{ const s=d.id; return s.length>5?s.slice(0,5)+'…':s; })
+    .attr('text-anchor','middle').attr('dy','0.35em')
+    .attr('font-size',d=>nr(d)>20?11:9).attr('fill','#f0ebe0').attr('font-weight','500')
+    .style('pointer-events','none').style('font-family','Noto Sans SC,Inter,sans-serif');
+
+  /* tooltip */
+  const tip=$('tip');
+  nodeEl.on('mouseenter',(ev,d)=>{
+    tip.style.opacity='1';
+    tip.innerHTML=`<strong>${esc(d.id)}</strong><br>in: ${d.in} &nbsp; out: ${d.out}`;
+  }).on('mousemove',ev=>{ tip.style.left=(ev.clientX+13)+'px'; tip.style.top=(ev.clientY-34)+'px'; })
+    .on('mouseleave',()=>{ tip.style.opacity='0'; });
+
+  sim.on('tick',()=>{
+    const px=d=>Math.max(10,Math.min(W-10,d.x));
+    const py=d=>Math.max(10,Math.min(H-10,d.y));
+    link.attr('x1',d=>px(d.source)).attr('y1',d=>py(d.source)).attr('x2',d=>px(d.target)).attr('y2',d=>py(d.target));
+    glow.attr('x1',d=>px(d.source)).attr('y1',d=>py(d.source)).attr('x2',d=>px(d.target)).attr('y2',d=>py(d.target));
+    elbl.attr('x',d=>(px(d.source)+px(d.target))/2).attr('y',d=>(py(d.source)+py(d.target))/2-5);
+    nodeEl.attr('transform',d=>`translate(${px(d)},${py(d)})`);
+  });
+}
+
+/* ── Step 4: Reasoning Path ── */
+async function runReasoning(caseText,laws,triples){
+  setStep(3,'run'); dim('cardReasoning',false);
+  $('reasoningBody').innerHTML=`<div class="sec-lbl">Generating reasoning path…</div><div class="stream-raw" id="rOut"><span class="cursor"></span></div>`;
+  const out=$('rOut');
+  let full='';
+  const body=JSON.stringify({case_text:caseText,laws,triples});
+  let streamed=false;
+  try{
+    const r=await fetch(`${api()}/api/reasoning/stream`,{method:'POST',headers:{'Content-Type':'application/json'},body});
+    if(r.ok&&r.body){
+      streamed=true;
+      const reader=r.body.getReader(),dec=new TextDecoder();
+      while(true){
+        const{done,value}=await reader.read(); if(done) break;
+        for(const line of dec.decode(value).split('\n')){
+          if(!line.startsWith('data:')) continue;
+          const p=line.slice(5).trim(); if(p==='[DONE]') break;
+          try{ const o=JSON.parse(p); full+=o.content; out.innerHTML=esc(full)+'<span class="cursor"></span>'; out.scrollTop=out.scrollHeight; }catch{}
+        }
+      }
+    }
+  }catch{}
+  if(!streamed){
+    const r=await fetch(`${api()}/api/reasoning`,{method:'POST',headers:{'Content-Type':'application/json'},body});
+    const d=await r.json(); full=d.reasoning_path;
+  }
+  S.reasoning=full; setStep(3,'done');
+  renderReasoningFlow(full);
+  return full;
+}
+
+/* Parse & render reasoning steps with arrows */
+function parseSteps(text){
+  const lines=text.split('\n');
+  const steps=[];
+  let cur=null;
+  const stepPat=/^(\d+)[.、．]\s*(?:【(.+?)】)?\s*(.*)/;
+  const cnPat=/^([一二三四五六七八九十]+)[、．]\s*(?:【(.+?)】)?\s*(.*)/;
+  const braPat=/^【(.+?)】\s*(.*)/;
+  for(const line of lines){
+    const t=line.trim(); if(!t){if(cur) cur.text+='\n'; continue;}
+    let m;
+    if((m=t.match(stepPat))){
+      if(cur) steps.push(cur);
+      cur={num:m[1],label:m[2]||t.slice(0,20),text:m[3]};
+    } else if((m=t.match(cnPat))){
+      if(cur) steps.push(cur);
+      cur={num:steps.length+1,label:m[2]||m[3].slice(0,20),text:m[2]?m[3]:''};
+    } else if((m=t.match(braPat))){
+      if(cur) steps.push(cur);
+      cur={num:steps.length+1,label:m[1],text:m[2]};
+    } else {
+      if(cur) cur.text+='\n'+line; else cur={num:1,label:'',text:t};
+    }
+  }
+  if(cur) steps.push(cur);
+  return steps.filter(s=>s.text.trim().length>0);
+}
+
+function renderReasoningFlow(text){
+  const steps=parseSteps(text);
+  const bd=$('reasoningBody');
+  if(steps.length<2){ bd.innerHTML=`<div class="sec-lbl">Reasoning path</div><div class="stream-raw">${esc(text)}</div>`; return; }
+  let html=`<div class="sec-lbl">${steps.length}-stage reasoning path</div><div class="rf-flow">`;
+  steps.forEach((s,i)=>{
+    html+=`<div class="rf-step" style="animation-delay:${(i*0.07).toFixed(2)}s">
+      <div class="rf-num">${s.num}</div>
+      <div class="rf-inner">
+        ${s.label?`<div class="rf-lbl">${esc(s.label)}</div>`:''}
+        <div class="rf-txt">${esc(s.text.trim())}</div>
+      </div>
+    </div>`;
+    if(i<steps.length-1) html+=`<div class="rf-connector"><div class="rf-line"></div><div class="rf-arrowhead"></div></div>`;
+  });
+  bd.innerHTML=html+'</div>';
+}
+
+/* ── Step 5: Analysis ── */
+async function runAnalysis(caseText,laws,reasoning){
+  setStep(4,'run'); dim('cardAnalysis',false);
+  $('analysisBody').innerHTML=`<div class="sec-lbl">Generating legal analysis…</div><div class="stream-raw" id="aOut"><span class="cursor"></span></div>`;
+  const out=$('aOut');
+  let full='';
+  const body=JSON.stringify({case_text:caseText,laws,reasoning_path:reasoning});
+  let streamed=false;
+  try{
+    const r=await fetch(`${api()}/api/analysis/stream`,{method:'POST',headers:{'Content-Type':'application/json'},body});
+    if(r.ok&&r.body){
+      streamed=true;
+      const reader=r.body.getReader(),dec=new TextDecoder();
+      while(true){
+        const{done,value}=await reader.read(); if(done) break;
+        for(const line of dec.decode(value).split('\n')){
+          if(!line.startsWith('data:')) continue;
+          const p=line.slice(5).trim(); if(p==='[DONE]') break;
+          try{ const o=JSON.parse(p); full+=o.content; out.innerHTML=esc(full)+'<span class="cursor"></span>'; out.scrollTop=out.scrollHeight; }catch{}
+        }
+      }
+    }
+  }catch{}
+  if(!streamed){
+    const r=await fetch(`${api()}/api/analysis`,{method:'POST',headers:{'Content-Type':'application/json'},body});
+    const d=await r.json(); full=d.analysis;
+  }
+  setStep(4,'done');
+  renderAnalysis(full);
+}
+
+function renderAnalysis(text){
+  const bd=$('analysisBody');
+  const secPat=/(?:^|\n)([一二三四五六七八九十]+)[、．]\s*(?:【(.+?)】)?/g;
+  const icons=['📋','⚖️','🔍','📊','📜','🎯'];
+  const parts=[]; let last=0, m, idx=0;
+  while((m=secPat.exec(text))!==null){
+    if(last<m.index&&text.slice(last,m.index).trim()) parts.push({hd:null,body:text.slice(last,m.index).trim()});
+    const end=secPat.lastIndex;
+    const nx=secPat.exec(text);
+    const nxi=nx?nx.index:text.length;
+    secPat.lastIndex=nx?nx.index:text.length;
+    parts.push({hd:`${m[1]}、${m[2]||''}`,body:text.slice(end,nxi).trim(),i:idx++});
+    last=nxi; if(!nx) break;
+  }
+  if(!parts.length){ bd.innerHTML=`<div class="stream-raw">${esc(text)}</div>`; return; }
+  bd.innerHTML=`<div class="a-sections">${parts.filter(p=>p.body).map(p=>`
+    <div class="a-sec">
+      ${p.hd?`<div class="a-sec-hd">${icons[p.i||0]||'•'} ${esc(p.hd)}</div>`:''}
+      <div class="a-sec-bd">${esc(p.body)}</div>
+    </div>`).join('')}</div>`;
+}
+
+/* ── Main pipeline ── */
+async function runPipeline(){
+  if(S.running) return;
+  const query=$('caseInput').value.trim();
+  if(!query){alert('Please enter a case description.');return;}
+  S.running=true;
+  const btn=$('btnRun');
+  btn.disabled=true; btn.innerHTML='<div class="spin"></div><span>Analyzing…</span>';
+  [0,1,2,3,4].forEach(i=>setStep(i,'wait'));
+  ['cardLaws','cardKG','cardReasoning','cardAnalysis'].forEach(id=>dim(id,true));
+  setStep(0,'done');
+  try{
+    const laws=await runSearch(query);
+    const triples=await runTriples(laws);
+    const reasoning=await runReasoning(query,laws,triples);
+    await runAnalysis(query,laws,reasoning);
+  }catch(e){
+    console.error(e);
+    for(const i of[1,2,3,4]){
+      if($(`tag${i}`).textContent==='Processing…'){setStep(i,'err');break;}
+    }
+    const bids=['lawsBody','kgBody','reasoningBody','analysisBody'];
+    for(const bid of bids){
+      const el=$(bid);
+      if(el&&(el.querySelector('.skel')||el.querySelector('.stream-raw'))){showErr(bid,e.message||String(e));break;}
+    }
+  }finally{
+    S.running=false; btn.disabled=false; btn.innerHTML='<span>Run Again</span>';
+  }
+}
+
+/* samples */
+const SAMPLES=[
+  '2019年11月15日21时许，被告人金德林与徐加泉各持猎枪相约打猎，被告人金德林将徐某2误认为猎物开枪致其死亡。',
+  '被告人张某某驾驶机动车时因疲劳驾驶，闯红灯撞上正常行驶的货车，造成2人死亡、3人重伤的重大交通事故后逃逸。',
+  '被告人李某担任财务总监期间，利用职务便利多次将公司款项转入个人账户，累计侵占资金人民币350万元。',
+];
+let si=0;
+$('btnSample').onclick=()=>{ $('caseInput').value=SAMPLES[si++%SAMPLES.length]; };
+setStep(0,'done');
+</script>
+</body>
+</html>
