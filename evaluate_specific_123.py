@@ -22,7 +22,7 @@ from rouge import Rouge
 
 # ── 要评估的模型（空列表 = 全部）─────────────────────────────
 # 示例：['deepseek_v3'] / ['deepseek_v3', 'gpt-4'] / []（全部）
-MODELS_TO_EVAL = ['GNN_Chain_without_lawformer']
+MODELS_TO_EVAL = ['qwen_7B_lora']
 
 # ── 要评估的任务（空列表 = 全部）─────────────────────────────
 # 示例：['1_1', '5_2'] / ['5_1', '5_2', '5_3'] / []（全部）
@@ -30,7 +30,7 @@ TASKS_TO_EVAL = []
 
 # ── 基础配置 ──────────────────────────────────────────────────
 MODEL_OUTPUT_DIR = 'model_output/zero_shot'
-OUTPUT_CSV = 'evaluation_result/evaluation_result_GNN_Chain_without_lawformer.csv'
+OUTPUT_CSV = 'evaluation_result/evaluation_result_qwen_7b_lora.csv'
 
 # 生成题额外指标（需要对应模型）
 USE_BERTSCORE = False  # 开启则需要填 BERT_MODEL_PATH
@@ -300,6 +300,10 @@ def main():
                 assert 1 <= t_num <= 6 and 1 <= t_sub <= 6
             except:
                 print(f"    [SKIP] Cannot parse task name from: {f_name}")
+                continue
+
+            # ── 核心修改：只评估 4_1 之前的任务（跳过 4_1 及所有更高编号任务）─────────────
+            if t_num >= 4:
                 continue
 
             # ── 任务过滤 ──────────────────────────────────────
